@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Y.Wu</title>
+    <link>/</link>
+    <description>Recent content in Home on Y.Wu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Feb 2019 14:00:00 -0200</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>America-taught Loneliness</title>
+      <link>/post/2019/02/03/america-taught-loneliness/</link>
+      <pubDate>Sun, 03 Feb 2019 14:00:00 -0200</pubDate>
+      
+      <guid>/post/2019/02/03/america-taught-loneliness/</guid>
+      <description>America-taught Loneliness Once I was told that “you should learn to be alone and learn how not to be lonely by just yourself.” There is an old saying goes “Being alone enables a person to become independent and strong.” It is however true, the skill has yet to be learned.
+Some facts from the nature: many species are dependent on their gregarious characteristics, such as wolves, lions, elephants, etc. The collective way of preying and inhabiting is probably the best way to survive and incubate their offspring in the wild environment.</description>
+    </item>
+    
+    <item>
+      <title>交通vs住房</title>
+      <link>/post/2019/01/08/%E4%BA%A4%E9%80%9Avs%E4%BD%8F%E6%88%BF/</link>
+      <pubDate>Tue, 08 Jan 2019 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2019/01/08/%E4%BA%A4%E9%80%9Avs%E4%BD%8F%E6%88%BF/</guid>
+      <description>交通和住房，你怎么选? 虽然这个问题我肯定说不太清，但还是要极力争取一个发言的机会。
+知乎博主告诉我，中产阶级是小资产阶级，即小商贩，手工业者，小企业家这种掌握一定生产资料的人。但是在世界不同地域，随着城市化进程的加快与放缓，中产阶级的定义并不是千篇一律。例如，在社会主义国家，中产可能由自由度较低的工业或者服务业从业者代表；在资本主义国家， 或许中产阶级完全被服务行业占领。但是无独有偶，不管在哪里工作，住房都是一个很大的问题。
+在我看来，劳工密集型城市更适宜走以城市交通为主的城市发展路线。在中国，我们经历过北上广深的城市发展历程，大部分城市的崛起都受益于公共轨道交通而带动的周边房地产开发；或者由密集住房社区而滋养的城市公共交通。城市交通和房屋住宅是互补并且互相依赖的关系。
+反之，在北美洲的大部分城市，由于人口密集度较低，城市无法负担高昂的公共交通设施，因而培养了世代的独立交通家庭。与其说北美的西方人个人意识强，不如说因为受到了地域隔离而让独立的家庭意识得以传承。我觉得这样也好，你不吃我家大米，我也用不着管你。我们共同并独立地发展科技，早日造出更快更节能的交通工具，以实现交通独立和节能环保。
+从宏观来看，脱离了地域隔阂的城市交通才是优秀的交通，但是随着人口日益增长，住房便成了大问题。为了实现大部分人老有所居的愿望，宏观调控便神奇地出现了。
+  </description>
+    </item>
+    
+    <item>
+      <title>A Quantitative Study of the Iowa Population at the County Level</title>
+      <link>/post/2018/12/07/a-quantitative-study-of-the-iowa-population-at-the-county-level/</link>
+      <pubDate>Fri, 07 Dec 2018 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2018/12/07/a-quantitative-study-of-the-iowa-population-at-the-county-level/</guid>
+      <description>Introduction The goal of this study is to look at:
+ What is the relationships between the population and other variables, such as education attainment, poverty, the mean of income, and the median house value. Visually display the distribution of median house values across the state, and three frequency distributions based on the population of a county. All counties are evenly divided into three tiers:  Tier 1: population size from 3,000 to 11,000 (33 counties) Tier 2: population size form 11,000 to 20,000 (33 counties) Tier 3: population size form 20,000 to 48,200 (33 counties)  Correlations between:  Number of bechelor received and number of poverty.</description>
+    </item>
+    
+    <item>
+      <title>Quantitative Terminologies</title>
+      <link>/post/2018/09/23/quantitative-terminologies/</link>
+      <pubDate>Sun, 23 Sep 2018 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2018/09/23/quantitative-terminologies/</guid>
+      <description>A Random Blog From the Weekend Readings I would really love to have at least one blog posted at weekly basis. However, that is not likely to happen since life is hard, with no exception to myself. So, I have made this small goal of posting a blog of my readings from time to time. This week’s topic is about the quantitative terminology. In this blog, I will list definitions and terms that are very often used in statistics.</description>
+    </item>
+    
+    <item>
+      <title>Life Circle</title>
+      <link>/post/2018/08/18/life-circle/</link>
+      <pubDate>Sat, 18 Aug 2018 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2018/08/18/life-circle/</guid>
+      <description> First of, let’s look at the following plot. t=seq(0,10,0.1) y=sin(t) plot(t,y,type=&amp;quot;l&amp;quot;, xlab=&amp;quot;random&amp;quot;, ylab=&amp;quot;random&amp;quot;) 如果问一个孩子这图代表什么，孩子可能会说这是波浪；
+如果问一个高中生，高中生可能会说这是正弦函数；
+如果问一个成熟市民，市民可能会发现图里有无数的波谷和波峰；
+如果问一个在病床上即将和死神握手的人，他可能会说我希望我的脉搏永远如此。
+在我看来，正弦函数不过代表了无数看得见看不见的跌宕起伏罢了。
+ 跌 我很喜欢中文的造字法，例如“跌”，失足于是就要跌，跌倒紧接着有可能就会跪，试着体会其中的奥义，我时常会被限于此。有人会说，大部分人三十岁前都是跌过来的。也不全然，天才跌的少，所以弯路走的少，像是很早就拿到了成功直通车的车票。我当然不属于拿到票的那少部分幸运儿，然而有可能永远得不到车票。不过没关系，一路走走停停，跑跑跳跳，偶尔跌倒不也是另有一番滋味。
+我想试图把这一部分的自己以暗淡的语调陈述出来。我一个读数学过来的人，不存在什么黯淡失色，在我的世界里只有黑白，离散，聚合，正确，错误，逻辑正确和推理错误。没有歌唱家的诡谲，没有舞蹈演员的惊艳，但是好像在每个领域却都能流光溢彩，靠的无外乎就是缜密逻辑和不容忍犯错误的科研精神。后来我接触到社会科学，城市研究开始带我了解身边的是非好坏和架构空间的一些列我称之为randomness的交叉学科精华。这个阶段是不会出错的，因为社会科学的容错率在学科历史的长河里可以说一度达到了新的高峰而且会持续上涨。它的存在是让人类更好地了解人类。边缘学科是要生存要发展的，人类是要不断探索未知领域的。在探索未知领域的过程中对各个学科知识的把握有着越来越高的要求。
+ 宕 人生得意须尽欢，莫使金樽空对月。朋友，待我归来，如果激情还未退却，斟满酒杯畅饮到天明，让曾经散场的宴席再续蜡光。
+很庆幸我有那么几个实在的朋友，平时也不见他们催促我进步，但是每每一段时间都能说上那么几句，知道最近在忙什么。这样也就足够了，没事别老把朋朋友友挂嘴边，大家都很忙的，要见别忘了预约。
+当然这里的朋友指的是值得的朋友，值得的朋友都有这样的特征：表面对你蛮不在乎，但是会为你的每一次进步而感到由衷开心；他们也会时不时地关心你的工作和学业，同样地，他们也会炫耀自己的研究成果。这里我理解的炫耀是好的炫耀，朋友 是用来激励你前进，陪伴你孤独的。那种天天只会看综艺，最后虽然也能拿到PhD学位，我看还是算了，这样在学术圈混多少有点玷污的意思。
+ 起 人生苦短，支棱起来就完了。语言能力强不一定非要咄咄逼人，把复杂的事物用最简单的话语来形容才是最华丽的；打羽毛球不一定非要勾对角，起身飞扣难道不是来得更酣畅淋漓？能直着来的事情，千万不要绕千山万水，生活原本简单，保持简单在我看来是最好也是最难的了。
+不要太在意过去是怎么样的，小王子曾经见识过地球上千千万万的生物，也去过很多星球，最后不还是得意自己的花和小狐狸吗。所以不必在意太多，吃自己喜欢的，做自己就是在最好地做自己。
+ 伏 这里我要草草结尾了，我本来只是打算试一下R Markdown 用来写中文是怎样的体验，一开口就停不下来，是毛病，得改！
+ </description>
+    </item>
+    
+    <item>
+      <title>Sentiment Analysis Projects</title>
+      <link>/post/2018/07/01/sentiment-analysis-projects/</link>
+      <pubDate>Sun, 01 Jul 2018 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2018/07/01/sentiment-analysis-projects/</guid>
+      <description>Contemporary sentiment analysis has been applied to online customer reviews (Amazon kind of basis). Robust computational algorithm has been applied to online flight ticket sales.
+The idea of this project is to use the same knowledge developed by computer scientists Liu in 2014 to grab students’ reviews for their taken online courses. However, it can be challenging in the following aspects:
+ Online forum data privacy regarding the students and the institutions.</description>
+    </item>
+    
+    <item>
+      <title>Text Analysis-Python</title>
+      <link>/post/2018/06/25/text-analysis-python/</link>
+      <pubDate>Mon, 25 Jun 2018 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2018/06/25/text-analysis-python/</guid>
+      <description>This is a brief introduction to text analysis by using python. To be general, the processes are as follows:
+ Set up correct working directory for importing document to process. Import .txt files in Python. Work towards the clean dataset as needed. Visualize data as requested.  There are many different ways to clean the dataset and alternate algorithms for text analysis. The following is the code along with some explaination of what I have learned for processing texts.</description>
+    </item>
+    
+    <item>
+      <title>Make Neighborhood Green Again</title>
+      <link>/post/2018/04/20/make-neighborhood-green-again/</link>
+      <pubDate>Fri, 20 Apr 2018 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2018/04/20/make-neighborhood-green-again/</guid>
+      <description>West Lawrence Greening Project This is a story map made through https://storymaps.arcgis.com/en/. The story map demonstrates the lack of walkability and canopy in West Lawrence neighborhoods. More details can be found at https://www.arcgis.com/apps/Cascade/index.html?appid=21536c10fe15412aa449045c9c6b0444.
+ </description>
+    </item>
+    
+    <item>
+      <title>A Combinatorial Proof of Binet&#39;s Formula</title>
+      <link>/post/2017/12/01/a-combinatorial-proof-of-binets-formula/</link>
+      <pubDate>Fri, 01 Dec 2017 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2017/12/01/a-combinatorial-proof-of-binets-formula/</guid>
+      <description>Binet’s Formula The Binet’s formula is also known as the explicit expression of n-th term of the Fibbonacci Sequence.
+Brief Introduction Counting is a very basic skill. We have all been learning how to count since we were very young. If we think back to our childhood, other than simple vocabulary like “daddy” and “mommy”, the most common thing was to count the numbers from one to ten. In this case, counting could be the first exposure to mathematics for many people.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
+      
+      <guid>/about/</guid>
+      <description>The website is build for the purpose of storing personal work and blogs. For more information, Contact yiwen at thomas5@live.cn :)
+Hi, my name is Yiwen, a graduate student studying at University of Kansas. My research interests intersect on a variety of areas, such as data analysis, text mining, government relationships and social network analysis. I did my undergraduate work in mathematics, specialized in counting and combinatorics. I believe that math truly enables me to better understand many scholarly publications.</description>
+    </item>
+    
+    <item>
+      <title>Sample Time Series Analysis - Movie statistics</title>
+      <link>/post/2016/04/20/sample-time-series-analysis---movie-statistics/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2016/04/20/sample-time-series-analysis---movie-statistics/</guid>
+      <description>Motivation Movies have been a source of entertainment for people for many years. Summertme superhero blockbusters typically bring excitement and fun to an otherwise calm tme. Theaters can rake in huge sums of money on these types of movies. In partcularr the movie Iron Man 3r released on May 3r 2013r provides a great example of this phenomenon. The box ofce tcket sales of this movie have been analyzed to ft the best tme series plot possible to atempt to approximate future movie tcket sales for movies of this type.</description>
+    </item>
+    
+    <item>
+      <title>Analysis of Housing Prices, Features Based Study  – Albuquerque, NM</title>
+      <link>/post/2016/02/14/analysis-of-housing-prices-features-based-study---albuquerque-nm/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2016/02/14/analysis-of-housing-prices-features-based-study---albuquerque-nm/</guid>
+      <description>Introduction Analyzing home prices is based on different factors that could affect the price of a house. Home prices may be affected by different factors such as square footage, age, number of features, location, etc. In this study, a dataset from Albuquerque was taken including square feet, age, number of certain features (out of 11, from dishwasher, refrigerator, microwave, disposer, washer, intercom, skylight(s), compactor, dryer, handicap fit, cable TV access), custom built or not, corner location or not, whether the home was located in the Northeast sector of the city, and its annual taxes.</description>
+    </item>
+    
+  </channel>
+</rss>

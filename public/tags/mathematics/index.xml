@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mathematics on Yiwen</title>
+    <link>/tags/mathematics/</link>
+    <description>Recent content in Mathematics on Yiwen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Dec 2017 21:49:57 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/mathematics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Combinatorial Proof of Binet&#39;s Formula</title>
+      <link>/post/2017/12/01/a-combinatorial-proof-of-binets-formula/</link>
+      <pubDate>Fri, 01 Dec 2017 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2017/12/01/a-combinatorial-proof-of-binets-formula/</guid>
+      <description>Binet’s Formula The Binet’s formula is also known as the explicit expression of n-th term of the Fibbonacci Sequence.
+Introduction Counting is a very basic skill. We have all been learning how to count since we were very young. If we think back to our childhood, other than simple vocabulary like “daddy” and “mommy”, the most common thing was to count the numbers from one to ten. In this case, counting could be the first exposure to mathematics for many people.</description>
+    </item>
+    
+  </channel>
+</rss>

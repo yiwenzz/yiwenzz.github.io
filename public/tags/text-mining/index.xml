@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Text mining on Yiwen</title>
+    <link>/tags/text-mining/</link>
+    <description>Recent content in Text mining on Yiwen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jul 2018 21:49:57 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/text-mining/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ideas of Sentiment Analysis Project</title>
+      <link>/post/2018/07/01/ideas-of-sentiment-analysis-project/</link>
+      <pubDate>Sun, 01 Jul 2018 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2018/07/01/ideas-of-sentiment-analysis-project/</guid>
+      <description> Sentiment Analysis of Online Education Programs The sentiment analysis (SA) by Liu 2014 brought many good aspects to both academics and web-based industries.
+当下SA已经被用于分析顾客反馈，例如航空网络售票系统。
+对于用网络授课的公司网页系统，我们将进行网页数据抓取(web scraping)，然后利用Liu的方法进行public opinion分析。主要步骤如下：
+ Retriving Parsing Exploring &amp;amp; Analyzing Visualizing  研究目的如下：
+ 探索学生偏好。由于网上教育是一种新型授课模式，用public opinion的方式来探索学生对课程的评价 教育项目/课程评估 教师评估 References for future students and program managers  </description>
+    </item>
+    
+  </channel>
+</rss>

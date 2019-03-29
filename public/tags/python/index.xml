@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Y.Wu</title>
+    <link>/tags/python/</link>
+    <description>Recent content in Python on Y.Wu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jul 2018 21:49:57 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sentiment Analysis Projects</title>
+      <link>/post/2018/07/01/sentiment-analysis-projects/</link>
+      <pubDate>Sun, 01 Jul 2018 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2018/07/01/sentiment-analysis-projects/</guid>
+      <description>Contemporary sentiment analysis has been applied to online customer reviews (Amazon kind of basis). Robust computational algorithm has been applied to online flight ticket sales.
+The idea of this project is to use the same knowledge developed by computer scientists Liu in 2014 to grab students’ reviews for their taken online courses. However, it can be challenging in the following aspects:
+ Online forum data privacy regarding the students and the institutions.</description>
+    </item>
+    
+    <item>
+      <title>Text Analysis-Python</title>
+      <link>/post/2018/06/25/text-analysis-python/</link>
+      <pubDate>Mon, 25 Jun 2018 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2018/06/25/text-analysis-python/</guid>
+      <description>This is a brief introduction to text analysis by using python. To be general, the processes are as follows:
+ Set up correct working directory for importing document to process. Import .txt files in Python. Work towards the clean dataset as needed. Visualize data as requested.  There are many different ways to clean the dataset and alternate algorithms for text analysis. The following is the code along with some explaination of what I have learned for processing texts.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GIS on Yiwen</title>
+    <link>/tags/gis/</link>
+    <description>Recent content in GIS on Yiwen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Apr 2018 21:49:57 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/gis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Make Neighborhood Green Again</title>
+      <link>/post/2018/04/20/make-neighborhood-green-again/</link>
+      <pubDate>Fri, 20 Apr 2018 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2018/04/20/make-neighborhood-green-again/</guid>
+      <description>West Lawrence Greening Project This is a story map made through https://storymaps.arcgis.com/en/. The story map demonstrates the lack of walkability and canopy in West Lawrence neighborhoods. More details can be found at https://www.arcgis.com/apps/Cascade/index.html?appid=21536c10fe15412aa449045c9c6b0444.
+ A simple run of mathematical formula in .RMD \[ {J(\theta) =\frac{1}{2m} [\sum^m_{i=1}(h_\theta(x^{(i)}) - y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j} \] ### md vs .rmd in blogdown title with 3 #s
+ </description>
+    </item>
+    
+  </channel>
+</rss>

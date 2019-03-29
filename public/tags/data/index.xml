@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data on Y.Wu</title>
+    <link>/tags/data/</link>
+    <description>Recent content in Data on Y.Wu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Dec 2018 21:49:57 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Quantitative Study of the Iowa Population at the County Level</title>
+      <link>/post/2018/12/07/a-quantitative-study-of-the-iowa-population-at-the-county-level/</link>
+      <pubDate>Fri, 07 Dec 2018 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2018/12/07/a-quantitative-study-of-the-iowa-population-at-the-county-level/</guid>
+      <description>Introduction The goal of this study is to look at:
+ What is the relationships between the population and other variables, such as education attainment, poverty, the mean of income, and the median house value. Visually display the distribution of median house values across the state, and three frequency distributions based on the population of a county. All counties are evenly divided into three tiers:  Tier 1: population size from 3,000 to 11,000 (33 counties) Tier 2: population size form 11,000 to 20,000 (33 counties) Tier 3: population size form 20,000 to 48,200 (33 counties)  Correlations between:  Number of bechelor received and number of poverty.</description>
+    </item>
+    
+    <item>
+      <title>Sentiment Analysis Projects</title>
+      <link>/post/2018/07/01/sentiment-analysis-projects/</link>
+      <pubDate>Sun, 01 Jul 2018 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2018/07/01/sentiment-analysis-projects/</guid>
+      <description>Contemporary sentiment analysis has been applied to online customer reviews (Amazon kind of basis). Robust computational algorithm has been applied to online flight ticket sales.
+The idea of this project is to use the same knowledge developed by computer scientists Liu in 2014 to grab students’ reviews for their taken online courses. However, it can be challenging in the following aspects:
+ Online forum data privacy regarding the students and the institutions.</description>
+    </item>
+    
+    <item>
+      <title>Text Analysis-Python</title>
+      <link>/post/2018/06/25/text-analysis-python/</link>
+      <pubDate>Mon, 25 Jun 2018 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2018/06/25/text-analysis-python/</guid>
+      <description>This is a brief introduction to text analysis by using python. To be general, the processes are as follows:
+ Set up correct working directory for importing document to process. Import .txt files in Python. Work towards the clean dataset as needed. Visualize data as requested.  There are many different ways to clean the dataset and alternate algorithms for text analysis. The following is the code along with some explaination of what I have learned for processing texts.</description>
+    </item>
+    
+    <item>
+      <title>Analysis of Housing Prices, Features Based Study  – Albuquerque, NM</title>
+      <link>/post/2016/02/14/analysis-of-housing-prices-features-based-study---albuquerque-nm/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2016/02/14/analysis-of-housing-prices-features-based-study---albuquerque-nm/</guid>
+      <description>Introduction Analyzing home prices is based on different factors that could affect the price of a house. Home prices may be affected by different factors such as square footage, age, number of features, location, etc. In this study, a dataset from Albuquerque was taken including square feet, age, number of certain features (out of 11, from dishwasher, refrigerator, microwave, disposer, washer, intercom, skylight(s), compactor, dryer, handicap fit, cable TV access), custom built or not, corner location or not, whether the home was located in the Northeast sector of the city, and its annual taxes.</description>
+    </item>
+    
+  </channel>
+</rss>

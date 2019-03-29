@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work on Yiwen</title>
+    <link>/categories/work/</link>
+    <description>Recent content in Work on Yiwen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Dec 2017 21:49:57 -0700</lastBuildDate>
+    
+	<atom:link href="/categories/work/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Combinatorial Proof of Binet&#39;s Formula</title>
+      <link>/post/2017/12/01/another-note/</link>
+      <pubDate>Fri, 01 Dec 2017 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2017/12/01/another-note/</guid>
+      <description>library(‘knitr’)
+Binet’s Formula The Binet’s formula is also known as the explicit expression of n-th term of Fibbonacci Sequence. See the proof as follows:
+In here I should insert my pdf document. still figuring our how to use knitr.
+ </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Land Use on Yiwen</title>
+    <link>/tags/land-use/</link>
+    <description>Recent content in Land Use on Yiwen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Apr 2018 21:49:57 -0700</lastBuildDate>
+    
+	<atom:link href="/tags/land-use/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Make Neighborhood Green Again</title>
+      <link>/post/2018/04/20/make-neighborhood-green-again/</link>
+      <pubDate>Fri, 20 Apr 2018 21:49:57 -0700</pubDate>
+      
+      <guid>/post/2018/04/20/make-neighborhood-green-again/</guid>
+      <description>West Lawrence Greening Project This is a story map made through https://storymaps.arcgis.com/en/. The story map demonstrates the lack of walkability and canopy in West Lawrence neighborhoods. More details can be found at https://www.arcgis.com/apps/Cascade/index.html?appid=21536c10fe15412aa449045c9c6b0444.
+ </description>
+    </item>
+    
+  </channel>
+</rss>

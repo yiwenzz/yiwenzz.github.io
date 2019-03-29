@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>A Study Based on Demographics of 99 Iowa Counties - Y.Wu</title>
+    <meta property="og:title" content="A Study Based on Demographics of 99 Iowa Counties - Y.Wu">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="In order to accomplish these following tasks:
+[&amp;hellip;] I use the these following packages in R:
+library(dplyr) library(magrittr) library(ggplot2) library(ggpubr) library(psych) library(Hmisc) &amp;hellip;">
+      <meta property="og:description" content="In order to accomplish these following tasks:
+[&amp;hellip;] I use the these following packages in R:
+library(dplyr) library(magrittr) library(ggplot2) library(ggpubr) library(psych) library(Hmisc) &amp;hellip;">
+      
+    
+
+    
+    
+    <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/f/fc/Blank_Iowa_county_map_with_county_names.svg">
+    
+    
+
+    
+
+    
+    
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+
+  </head>
+
+  
+  <body class="post">
+    <header class="masthead">
+      <h1><a href="/">Y.Wu</a></h1>
+
+
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/">Home</a></li>
+  
+  <li><a href="/about/">About</a></li>
+  
+  <li><a href="/categories/">Categories</a></li>
+  
+  <li><a href="/tags/">Tags</a></li>
+  
+  <li><a href="/cv/">CV</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>A Study Based on Demographics of 99 Iowa Counties</h1>
+
+<h3>
+  2018-12-07</h3>
+<hr>
+
+
+      </header>
+
+
+
+<div class="figure">
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Blank_Iowa_county_map_with_county_names.svg" />
+
+</div>
+<div id="load-packages" class="section level2">
+<h2>Load Packages</h2>
+<p>In order to accomplish these following tasks:</p>
+<ul>
+<li>Data manipulation</li>
+<li>Correlation</li>
+<li>Histogram Visualization</li>
+<li>2-sample t test</li>
+</ul>
+<p>I use the these following packages in R:</p>
+<pre class="r"><code>library(dplyr)
+library(magrittr)
+library(ggplot2)
+library(ggpubr)
+library(psych)
+library(Hmisc)
+library(devtools)</code></pre>
+</div>
+<div id="import-data" class="section level2">
+<h2>Import Data</h2>
+<p>I used a .csv file to store all collected data from the U.S. Census. My target are 99 counties of the state of Iowa.</p>
+<pre class="r"><code>my_data &lt;- read.csv(&quot;/Users/yiwenw/Desktop/741 data/Iowa.csv&quot;, header=TRUE, stringsAsFactors=FALSE)</code></pre>
+</div>
+<div id="check-variables" class="section level2">
+<h2>Check Variables</h2>
+<p>By using <code>head</code>, we are able to check all variables collected for future data analysis. From U.S. Census Data, I collected the following data as my variables: data2010 population, 2017 population, number of bachelor obtained for over 25 year-old, population count that is below poverty, mean of income, and the median house value</p>
+<pre class="r"><code>head(my_data)</code></pre>
+<pre><code>##               Id             Geography pop.2010 pop.2017 by.pop
+## 1 0500000US19003    Adams County, Iowa     4029     3686      1
+## 2 0500000US19159 Ringgold County, Iowa     5131     5034      1
+## 3 0500000US19009  Audubon County, Iowa     6119     5578      1
+## 4 0500000US19143  Osceola County, Iowa     6462     6045      1
+## 5 0500000US19173   Taylor County, Iowa     6317     6178      1
+## 6 0500000US19185    Wayne County, Iowa     6403     6476      1
+##   Over25.Bach below.poverty median.house mean.income employed
+## 1         357           418        84900       76251     5935
+## 2         521           518        79600       77205     3116
+## 3         414           614        68800       79727    11189
+## 4         595           689        89500       73473    10108
+## 5         446           668        76100       74703     4783
+## 6         416          1001        74700       65938    20110</code></pre>
+</div>
+<div id="univariate-statistics" class="section level2">
+<h2>Univariate Statistics</h2>
+<p>By running <code>summary</code>, we are able to learn some basic statistics of our dataset. These statistics are range, mean and median.</p>
+<pre class="r"><code>summary(my_data)</code></pre>
+<pre><code>##       Id             Geography            pop.2010         pop.2017     
+##  Length:99          Length:99          Min.   :  4029   Min.   :  3686  
+##  Class :character   Class :character   1st Qu.: 10430   1st Qu.:  9977  
+##  Mode  :character   Mode  :character   Median : 15679   Median : 15224  
+##                                        Mean   : 30771   Mean   : 31775  
+##                                        3rd Qu.: 24631   3rd Qu.: 25066  
+##                                        Max.   :430640   Max.   :481830  
+##      by.pop   Over25.Bach      below.poverty    median.house   
+##  Min.   :1   Min.   :  357.0   Min.   :  418   Min.   : 68800  
+##  1st Qu.:1   1st Qu.:  944.5   1st Qu.: 1057   1st Qu.: 91050  
+##  Median :2   Median : 1544.0   Median : 1570   Median :107700  
+##  Mean   :2   Mean   : 3908.7   Mean   : 3650   Mean   :113776  
+##  3rd Qu.:3   3rd Qu.: 2718.0   3rd Qu.: 2527   3rd Qu.:130600  
+##  Max.   :3   Max.   :75457.0   Max.   :53570   Max.   :218000  
+##   mean.income        employed     
+##  Min.   : 60582   Min.   :  3116  
+##  1st Qu.: 75504   1st Qu.:  8114  
+##  Median : 79876   Median : 12194  
+##  Mean   : 81653   Mean   : 24844  
+##  3rd Qu.: 85658   3rd Qu.: 19728  
+##  Max.   :129274   Max.   :354927</code></pre>
+<div id="histograms-and-density-distributions" class="section level3">
+<h3>Histograms and Density Distributions</h3>
+<pre class="r"><code>x &lt;- my_data$mean.income
+hist(x,main = &quot;Distribution of Mean of Income&quot;, xlab = &quot;Income Range&quot;, 
+     col = &quot;blue&quot;, border =&quot;black&quot;, prob = T )
+lines(density(x, adjust = 2), col = &quot;red&quot;)</code></pre>
+<p><img src="/post/Iowa_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<pre class="r"><code>y &lt;- my_data$median.house
+hist(y,main = &quot;Distribution of Median House Value&quot;, xlab = &quot;Value Range&quot;, 
+     xlim = c(0, 220000), col = &quot;blue&quot;, border =&quot;black&quot;, prob=TRUE)
+lines(density(y, adjust = 2), col = &quot;red&quot;)</code></pre>
+<p><img src="/post/Iowa_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>Based on the population size, I devide 99 counties into three tiers of counties. 1. Population between 3600 and 11000: 33 counties -pop1 2. Population between 11000 and 20000: 33 counties - pop2 3. Population between 20000 and 482000: 33 counties - pop3</p>
+<pre class="r"><code>pop1 &lt;- filter(my_data, by.pop == 1)
+y1 &lt;- pop1$mean.income
+hist(y1,main = &quot;Income Distribution of Lower 1/3 Populated Counties&quot;, xlab = &quot;Income Range&quot;,
+     xlim = c(60000, 150000), col = &quot;blue&quot;, border =&quot;black&quot;, prob=TRUE)
+lines(density(y1, adjust = 2), col = &quot;red&quot;)</code></pre>
+<p><img src="/post/Iowa_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<pre class="r"><code>head(y1)</code></pre>
+<pre><code>## [1] 76251 77205 79727 73473 74703 65938</code></pre>
+<pre class="r"><code>head(pop1)</code></pre>
+<pre><code>##               Id             Geography pop.2010 pop.2017 by.pop
+## 1 0500000US19003    Adams County, Iowa     4029     3686      1
+## 2 0500000US19159 Ringgold County, Iowa     5131     5034      1
+## 3 0500000US19009  Audubon County, Iowa     6119     5578      1
+## 4 0500000US19143  Osceola County, Iowa     6462     6045      1
+## 5 0500000US19173   Taylor County, Iowa     6317     6178      1
+## 6 0500000US19185    Wayne County, Iowa     6403     6476      1
+##   Over25.Bach below.poverty median.house mean.income employed
+## 1         357           418        84900       76251     5935
+## 2         521           518        79600       77205     3116
+## 3         414           614        68800       79727    11189
+## 4         595           689        89500       73473    10108
+## 5         446           668        76100       74703     4783
+## 6         416          1001        74700       65938    20110</code></pre>
+<pre class="r"><code>pop2 &lt;- filter(my_data, by.pop == 2)
+y2 &lt;- pop2$mean.income
+hist(y2,main = &quot;Income Distribution of Middle 1/3 Populated Counties&quot;, xlab = &quot;Income Range&quot;, 
+     xlim = c(60000, 150000), col = &quot;blue&quot;, border =&quot;black&quot;, prob=TRUE)
+lines(density(y2, adjust = 2), col = &quot;red&quot;)</code></pre>
+<p><img src="/post/Iowa_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<pre class="r"><code>pop3 &lt;- filter(my_data, by.pop == 3)
+y3 &lt;- pop3$mean.income
+hist(y3,main = &quot;Income Distribution of Top 1/3 Populated Counties&quot;, xlab = &quot;Income Range&quot;,
+     xlim = c(60000, 150000), col = &quot;blue&quot;, border =&quot;black&quot;, prob=TRUE)
+lines(density(y3, adjust = 2), col = &quot;red&quot;)</code></pre>
+<p><img src="/post/Iowa_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<div id="correlation-between-number-of-bachelor-over-25-in-age-and-number-under-poverty" class="section level4">
+<h4>Correlation between number of bachelor over 25 in age and number under poverty</h4>
+<p>Normally, we would expact the correlation between number of bechalor degrees obtained and the number of people under poverty. However, the truth can be: the more bechalors a county has, the bigger population it may have. Therefore, it is more likely to have more people under poverty.</p>
+<pre class="r"><code>correlation1 &lt;- cor(my_data$Over25.Bach, my_data$below.poverty, 
+                   method = c(&quot;pearson&quot;))
+correlation1</code></pre>
+<pre><code>## [1] 0.9541034</code></pre>
+</div>
+<div id="correlation-between-median-house-value-and-mean-of-income." class="section level4">
+<h4>Correlation between median house value and mean of income.</h4>
+<p>There is a strong positive correlation between median house value and the average income.</p>
+<pre class="r"><code>correlation2 &lt;- cor(my_data$median.house, my_data$mean.income, 
+                    method = c(&quot;pearson&quot;))
+correlation2</code></pre>
+<pre><code>## [1] 0.8414412</code></pre>
+</div>
+<div id="correlation-between-number-of-employed-and-mean-of-income." class="section level4">
+<h4>Correlation between number of employed and mean of income.</h4>
+<p>It is very likely that there is no correlation between number of employed and the mean of income.</p>
+<pre class="r"><code>correlation3 &lt;- cor(my_data$employed, my_data$mean.income, 
+                    method = c(&quot;pearson&quot;))
+correlation3</code></pre>
+<pre><code>## [1] 0.04853983</code></pre>
+</div>
+<div id="correlation-between-number-of-employed-and-number-under-poverty." class="section level4">
+<h4>Correlation between number of employed and number under poverty.</h4>
+<p>It is very likely that there is no correlation between number of employed and the number under poverty</p>
+<pre class="r"><code>correlation4 &lt;- cor(my_data$employed, my_data$below.poverty, 
+                    method = c(&quot;pearson&quot;))
+correlation4</code></pre>
+<pre><code>## [1] -0.004254535</code></pre>
+</div>
+</div>
+</div>
+<div id="t--test" class="section level2">
+<h2>T- test</h2>
+<pre class="r"><code>res &lt;- t.test(my_data$pop.2017, my_data$mean.income, data = my_data, var.equal = TRUE)
+res</code></pre>
+<pre><code>## 
+##  Two Sample t-test
+## 
+## data:  my_data$pop.2017 and my_data$mean.income
+## t = -8.3951, df = 196, p-value = 9.212e-15
+## alternative hypothesis: true difference in means is not equal to 0
+## 95 percent confidence interval:
+##  -61594.95 -38160.87
+## sample estimates:
+## mean of x mean of y 
+##  31774.86  81652.77</code></pre>
+</div>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/post/2018/09/23/quantitative-terminologies/">Quantitative Terminologies</a></span>
+  <span class="nav-next"></span>
+</nav>
+
+
+
+
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+  
+  <hr>
+  <div class="copyright">2018 | <a href="https://github.com/yiwenzz">GitHub</a> | <a href="https://twitter.com/ywuKU">Twitter</a></div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+

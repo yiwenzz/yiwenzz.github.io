@@ -1,0 +1,19 @@
+---
+title: "Make the Neighborhood Green Again"
+date: "2018-04-20T21:49:57-07:00"
+categories:
+  - Thoughts
+  - Products
+tags:
+  - ESRI
+  
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## West Lawrence Greening Project
+
+This is a story map made through <https://storymaps.arcgis.com/en/>. The story map demonstrates the lack of walkability and canopy in West Lawrence neighborhoods. More details can be found at <https://www.arcgis.com/apps/Cascade/index.html?appid=21536c10fe15412aa449045c9c6b0444>.
+

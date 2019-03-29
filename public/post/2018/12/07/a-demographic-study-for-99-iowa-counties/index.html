@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>A Demographic Study for 99 Iowa Counties - Y.Wu</title>
+    <meta property="og:title" content="A Demographic Study for 99 Iowa Counties - Y.Wu">
+    
+    <meta name="twitter:card" content="summary">
+
+    
+      
+    
+
+    
+      
+      <meta property="description" content="I use the these following packages in R to accomplish the following tasks:
+[&amp;hellip;] library(dplyr) library(magrittr) library(ggplot2) library(ggpubr) library(psych) library(Hmisc) library(devtools) &amp;hellip;">
+      <meta property="og:description" content="I use the these following packages in R to accomplish the following tasks:
+[&amp;hellip;] library(dplyr) library(magrittr) library(ggplot2) library(ggpubr) library(psych) library(Hmisc) library(devtools) &amp;hellip;">
+      
+    
+
+    
+    
+    <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/f/fc/Blank_Iowa_county_map_with_county_names.svg">
+    
+    
+
+    
+
+    
+    
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+
+  </head>
+
+  
+  <body class="post">
+    <header class="masthead">
+      <h1><a href="/">Y.Wu</a></h1>
+
+
+
+      <nav class="menu">
+  <input id="menu-check" type="checkbox" />
+  <label id="menu-label" for="menu-check" class="unselectable">
+    <span class="icon close-icon">✕</span>
+    <span class="icon open-icon">☰</span>
+    <span class="text">Menu</span>
+  </label>
+  <ul>
+  
+  
+  <li><a href="/">Home</a></li>
+  
+  <li><a href="/about/">About</a></li>
+  
+  <li><a href="/categories/">Categories</a></li>
+  
+  <li><a href="/tags/">Tags</a></li>
+  
+  <li><a href="/cv/">CV</a></li>
+  
+  
+  </ul>
+</nav>
+
+    </header>
+
+    <article class="main">
+      <header class="title">
+      
+<h1>A Demographic Study for 99 Iowa Counties</h1>
+
+<h3>
+  2018-12-07</h3>
+<hr>
+
+
+      </header>
+
+
+
+<div class="figure">
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Blank_Iowa_county_map_with_county_names.svg" />
+
+</div>
+<div id="load-packages" class="section level2">
+<h2>Load Packages</h2>
+<p>I use the these following packages in R to accomplish the following tasks:</p>
+<ul>
+<li>Data manipulation</li>
+<li>Correlation</li>
+<li>Histogram Visualization</li>
+<li>2-sample t test</li>
+<li></li>
+</ul>
+<pre class="r"><code>library(dplyr)
+library(magrittr)
+library(ggplot2)
+library(ggpubr)
+library(psych)
+library(Hmisc)
+library(devtools)</code></pre>
+</div>
+<div id="step-1-import-data" class="section level2">
+<h2>Step 1: Import Data</h2>
+<p>I used a .csv file to store all collected data from the U.S. Census. My target are 99 counties of the state of Iowa.</p>
+<pre class="r"><code>my_data &lt;- read.csv(&quot;/Users/yiwenw/Desktop/741 data/Iowa.csv&quot;, header=TRUE, stringsAsFactors=FALSE)</code></pre>
+</div>
+<div id="check-variables" class="section level2">
+<h2>Check Variables</h2>
+<p>By using <code>head</code>, we are able to check all variables collected for future data analysis. From U.S. Census Data, I collected the following data as my variables: data2010 population, 2017 population, number of bachelor obtained for over 25 year-old, population count that is below poverty, mean of income, and the median house value</p>
+<pre class="r"><code>head(my_data)</code></pre>
+<pre><code>##               Id             Geography pop.2010 pop.2017 by.pop
+## 1 0500000US19003    Adams County, Iowa     4029     3686      1
+## 2 0500000US19159 Ringgold County, Iowa     5131     5034      1
+## 3 0500000US19009  Audubon County, Iowa     6119     5578      1
+## 4 0500000US19143  Osceola County, Iowa     6462     6045      1
+## 5 0500000US19173   Taylor County, Iowa     6317     6178      1
+## 6 0500000US19185    Wayne County, Iowa     6403     6476      1
+##   Over25.Bach below.poverty median.house mean.income employed
+## 1         357           418        84900       76251     5935
+## 2         521           518        79600       77205     3116
+## 3         414           614        68800       79727    11189
+## 4         595           689        89500       73473    10108
+## 5         446           668        76100       74703     4783
+## 6         416          1001        74700       65938    20110</code></pre>
+</div>
+<div id="univariate-statistics" class="section level2">
+<h2>Univariate Statistics</h2>
+<p>By</p>
+<pre class="r"><code>summary(my_data)</code></pre>
+<pre><code>##       Id             Geography            pop.2010         pop.2017     
+##  Length:99          Length:99          Min.   :  4029   Min.   :  3686  
+##  Class :character   Class :character   1st Qu.: 10430   1st Qu.:  9977  
+##  Mode  :character   Mode  :character   Median : 15679   Median : 15224  
+##                                        Mean   : 30771   Mean   : 31775  
+##                                        3rd Qu.: 24631   3rd Qu.: 25066  
+##                                        Max.   :430640   Max.   :481830  
+##      by.pop   Over25.Bach      below.poverty    median.house   
+##  Min.   :1   Min.   :  357.0   Min.   :  418   Min.   : 68800  
+##  1st Qu.:1   1st Qu.:  944.5   1st Qu.: 1057   1st Qu.: 91050  
+##  Median :2   Median : 1544.0   Median : 1570   Median :107700  
+##  Mean   :2   Mean   : 3908.7   Mean   : 3650   Mean   :113776  
+##  3rd Qu.:3   3rd Qu.: 2718.0   3rd Qu.: 2527   3rd Qu.:130600  
+##  Max.   :3   Max.   :75457.0   Max.   :53570   Max.   :218000  
+##   mean.income        employed     
+##  Min.   : 60582   Min.   :  3116  
+##  1st Qu.: 75504   1st Qu.:  8114  
+##  Median : 79876   Median : 12194  
+##  Mean   : 81653   Mean   : 24844  
+##  3rd Qu.: 85658   3rd Qu.: 19728  
+##  Max.   :129274   Max.   :354927</code></pre>
+<p>In this sample, variables <strong>rush_att, rush_yds, rush_avg, rush_tds, rush_fumbles</strong> have 47,710 missing values; variables <strong>rec, rec_yds, rec_avg, rec_tds, rec_fumbles</strong> have 16,722 missing values, variables <strong>pass_att, pass_yds, pass_tds, int, sck, pass_fumbles, rate</strong> have 71,044 missing values.</p>
+<p>Also, look at the range (Min., Max.) of variables in <code>summary</code> output, sometimes the responses may exceed expected range. You may have to delete those cases in this situation.</p>
+<div id="step-2.3-check-first-and-last-cases" class="section level3">
+<h3>step 2.3: check first and last cases</h3>
+<p>Sometimes you may find the second row of data including some information you don’t want. For example, Qualtrics survey data will put some background log information in row 2. Thus, it’s better to check the head and tail of dataset. You can use functions below:</p>
+<p>The R output provide first 6 cases and last 6 case. You can use <code>head(dat1, 10)</code> to output first 10 cases.</p>
+</div>
+</div>
+<div id="step-3-select-and-rename-variables" class="section level2">
+<h2>Step 3: Select and rename Variables</h2>
+<p>After initial checks, some basic data cleaning could be done. You may want to select some variables you want and remove others. You can use <code>select</code> function to do that:</p>
+<p>I selected 3 variables (name, team, pass_att) from the dat1 and assign 3-variables data to “dat2”.</p>
+<p>To rename the variables’ names, you could use <code>set_names()</code> from purrr packages.</p>
+</div>
+<div id="step-4-remove-missing-values" class="section level2">
+<h2>Step 4: Remove missing values</h2>
+<p>If you prefer cases with no missing cases at all. You can use the function below.</p>
+<p>Or if you want remove the cases whose <strong>Pass_Attribute</strong> is missing, you can use:</p>
+</div>
+
+
+  <footer>
+  
+<nav class="post-nav">
+  <span class="nav-prev">&larr; <a href="/post/2018/09/23/quantitative-terminologies/">Quantitative Terminologies</a></span>
+  <span class="nav-next"></span>
+</nav>
+
+
+
+
+
+<script src="//yihui.name/js/math-code.js"></script>
+<script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+  
+  <hr>
+  <div class="copyright">2018 | <a href="https://github.com/yiwenzz">GitHub</a> | <a href="https://twitter.com/ywuKU">Twitter</a></div>
+  
+  </footer>
+  </article>
+  
+  </body>
+</html>
+
