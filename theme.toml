@@ -2,8 +2,8 @@
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
 # config.toml
 
-baseURL = "https://your_web_site"
-title = "Your Blog"
+baseURL = "https://yiwenzz.github.io"
+title = "This is a new web"
 theme = "hugo-primer"
 languageCode = "ja"
 # If you are using Chinese, Japanese, or Korean, I highly recommend you to set this true.
@@ -16,7 +16,7 @@ googleAnalytics = "U-12345678-0"
 
 # Enter a copyright notice to display in the site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy;Your Name 2019"
+copyright = "This is fine"
 
 [frontmatter]
 # update sitemap.xml's lastmod datetime by file change time, instead of git.
@@ -24,7 +24,7 @@ lastmod = ["lastmod", ":fileModTime", ":default"]
 
 [params]
 description = "Describe what your web page is about"
-twitter = "your_twitter_id"
+twitter = "ywu0767"
 # You can use favicon by addin them manually.
 useIcon = true
 useTwitterCard = true
