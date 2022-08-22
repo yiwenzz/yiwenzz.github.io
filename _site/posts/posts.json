@@ -1,0 +1,36 @@
+[
+  {
+    "path": "posts/2022-08-22-building-distill/",
+    "title": "building a website from scratch",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Yiwen Wu",
+        "url": {}
+      }
+    ],
+    "date": "2022-08-22",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing,\nnative to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2022-08-22T18:03:27-05:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2022-08-22-buildingdistill/",
+    "title": "building a website from scratch",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Yiwen Wu",
+        "url": {}
+      }
+    ],
+    "date": "2022-08-22",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing,\nnative to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2022-08-22T18:03:36-05:00",
+    "input_file": {}
+  }
+]
