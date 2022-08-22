@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="home">
+  {{ content }}
+
+  <ul class="post-list">
+  <hr>
+    <p align="left">
+      <b>Hello! I am a doctorial student in the Department of Educational Psychology at the University of Kansas. I basically use this site to show my recent, current, and future work as well as some tutorials in a way that tries to make my efforts more interactive. More details in <a href="https://jihongz.github.io/about/"> About Me </a> Page.</b>
+    </p>
+  </br>
+  <hr>
+
+   <h1>
+      <a id="user-content-header-1" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>My Posts</h1>
+
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+        {{ post.excerpt  | remove: '<p>' | remove: '</p>' }}
+
+        <p> {{ post.author }} ,
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        </p>
+      </li>
+    {% endfor %}
+
+  </ul>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>

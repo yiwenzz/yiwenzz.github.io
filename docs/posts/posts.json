@@ -1,0 +1,36 @@
+[
+  {
+    "path": "posts/2022-08-20-buildingdistill/",
+    "title": "Building a {distill} website",
+    "description": "How I built this site using {distill}",
+    "author": [
+      {
+        "name": "Yiwen Wu",
+        "url": {}
+      }
+    ],
+    "date": "2022-08-20",
+    "categories": [],
+    "contents": "\nHere is where I talk about building this website.\n\n\n\n",
+    "preview": "posts/2022-08-20-buildingdistill/blog1_photo.png",
+    "last_modified": "2022-08-22T16:56:02-05:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2022-08-20-buildingdistill2/",
+    "title": "Building a {distill} website",
+    "description": "The second try!!",
+    "author": [
+      {
+        "name": "Yiwen Wu",
+        "url": {}
+      }
+    ],
+    "date": "2022-08-20",
+    "categories": [],
+    "contents": "\nHere are instructions 1 2 3\n\n\n\n",
+    "preview": {},
+    "last_modified": "2022-08-22T16:55:49-05:00",
+    "input_file": {}
+  }
+]
