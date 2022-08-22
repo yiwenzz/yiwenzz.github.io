@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Yiwen Wu</title>
+    <link>http://www.pipinghotdata.com</link>
+    <atom:link href="http://www.pipinghotdata.com/Blog.xml" rel="self" type="application/rss+xml"/>
+    <description>Yiwen's blog posts
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Mon, 22 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>building a website from scratch</title>
+      <dc:creator>Yiwen Wu</dc:creator>
+      <link>http://www.pipinghotdata.com/posts/2022-08-22-building-distill</link>
+      <description>A short description of the post.</description>
+      <guid>http://www.pipinghotdata.com/posts/2022-08-22-building-distill</guid>
+      <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>building a website from scratch</title>
+      <dc:creator>Yiwen Wu</dc:creator>
+      <link>http://www.pipinghotdata.com/posts/2022-08-22-buildingdistill</link>
+      <description>A short description of the post.</description>
+      <guid>http://www.pipinghotdata.com/posts/2022-08-22-buildingdistill</guid>
+      <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
