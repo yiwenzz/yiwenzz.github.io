@@ -4,7 +4,7 @@ description: |
   Keywords: combinatorics, counting, Binet's Formula
 author:
   - name: Yiwen Wu
-date: 201712-01
+date: 2017-12-01
 preview: binet.png
 output:
   distill::distill_article:

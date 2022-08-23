@@ -11,27 +11,18 @@
     <item>
       <title>building a website from scratch</title>
       <dc:creator>Yiwen Wu</dc:creator>
-      <link>http://www.pipinghotdata.com/posts/2022-08-22-building-distill</link>
-      <description>A short description of the post.</description>
-      <guid>http://www.pipinghotdata.com/posts/2022-08-22-building-distill</guid>
-      <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>building a website from scratch</title>
-      <dc:creator>Yiwen Wu</dc:creator>
       <link>http://www.pipinghotdata.com/posts/2022-08-22-buildingdistill</link>
       <description>A short description of the post.</description>
       <guid>http://www.pipinghotdata.com/posts/2022-08-22-buildingdistill</guid>
       <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>[Tutorial] Creating Academic Blog</title>
-      <dc:creator>Zhang Jihong</dc:creator>
-      <link>http://www.pipinghotdata.com/posts/2022-04-24-tutorial-of-creating-personal-blog-using-distill-package-and-github-pages</link>
-      <description>This post reviews the procedure of creating Github Pages Website  using distill package and Github Pages in a step-to-step way.</description>
-      <guid>http://www.pipinghotdata.com/posts/2022-04-24-tutorial-of-creating-personal-blog-using-distill-package-and-github-pages</guid>
-      <pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate>
-      <media:content url="http://www.pipinghotdata.com/posts/2022-04-24-tutorial-of-creating-personal-blog-using-distill-package-and-github-pages/img/file_structure.png" medium="image" type="image/png" width="342" height="528"/>
+      <title>A Lively Neighborhood? A Project for Improving neighborhood livelyhood in Lawrence, Kansas</title>
+      <dc:creator>Yiwen Wu</dc:creator>
+      <link>http://www.pipinghotdata.com/posts/2018-04-20-community-g</link>
+      <description>Keywords: community garden, canopy, livable, lively neighborhood</description>
+      <guid>http://www.pipinghotdata.com/posts/2018-04-20-community-g</guid>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>A Combinatorial Proof of Binet's Formula</title>

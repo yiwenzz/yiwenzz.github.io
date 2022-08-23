@@ -1,22 +1,5 @@
 [
   {
-    "path": "posts/2022-08-22-building-distill/",
-    "title": "building a website from scratch",
-    "description": "A short description of the post.",
-    "author": [
-      {
-        "name": "Yiwen Wu",
-        "url": {}
-      }
-    ],
-    "date": "2022-08-22",
-    "categories": [],
-    "contents": "\nDistill is a publication format for scientific and technical writing,\nnative to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
-    "preview": {},
-    "last_modified": "2022-08-22T18:00:05-05:00",
-    "input_file": {}
-  },
-  {
     "path": "posts/2022-08-22-buildingdistill/",
     "title": "building a website from scratch",
     "description": "A short description of the post.",
@@ -34,23 +17,21 @@
     "input_file": {}
   },
   {
-    "path": "posts/2022-04-24-tutorial-of-creating-personal-blog-using-distill-package-and-github-pages/",
-    "title": "[Tutorial] Creating Academic Blog",
-    "description": "This post reviews the procedure of creating Github Pages Website  using distill package and Github Pages in a step-to-step way.",
+    "path": "posts/2018-04-20-community-g/",
+    "title": "A Lively Neighborhood? A Project for Improving neighborhood livelyhood in Lawrence, Kansas",
+    "description": "Keywords: community garden, canopy, livable, lively neighborhood",
     "author": [
       {
-        "name": "Zhang Jihong",
+        "name": "Yiwen Wu",
         "url": {}
       }
     ],
-    "date": "2022-04-24",
+    "date": "2018-04-20",
     "categories": [],
-    "contents": "\nRequirement\nFollowing software is necessary to replicate the steps in this\npost:\nGithub account\nRstudio and R\ndistill R package\nTo get started with Github, please refer to the official\nwebsite. To install distill package, run\ninstall.packages(\"distill\") in your R console.\nProcedure\nTo create a website with the URL <username.github.io>, create\nthe directory name with same name and same Github repo name. For\nexample, my github repo name is “jihongz.github.io”, and it is published\nin http://jihongz.github.io.\nNecessary\nFiles\nTo have your personal website, you need to have all require files for\nthe website. The basic files for Github Pages based website with distill\nincludes:\n_site.yml\nindex.Rmd\n.nojekyll\n_posts\nExample of file structure used in my\ngithub websiteNew Post\nTo create a new post, use distill::create_post()\nfunction with the name of the post. The function will create a new\ndirectory “2022-XX-XX-post-name” in the _posts folder in which\nthere exists a Rmd file with same name. The Rmd file will be your\ncontent of the new post.\n\n\ndistill::create_post(title = \"Tutorial of creating personal blog using distill package and Github Pages\")\n\n\nFiles in your post folderOpen the Rmd file and make sure the header of your Rmd file is like\nthis:\n---\ntitle: \"[Tutorial] Creating Academic Blog\"\ndescription: |\n  This post reviews the procedure of creating Github Pages Website  using distill package and Github Pages in a step-to-step way.\nauthor:\n  - name: Zhang Jihong\n    url: {}\ndate: 2022-04-24\noutput:\n  distill::distill_article:\n    self_contained: false\n---\nAfter editting the Rmd file, knit the fill and then build website\nusing Build Website button in the Build pane of Rstudio.\nThe Build button in RstudioIt will then pop up your updated website in a window.\nPreview of updated websiteHowever, the website is not published yet. To publish the website,\nupload the files to Github. Following is a example of pushing the local\nfiles to the Github server via command line.\n\ngit add *\ngit commit -m \"create a new post\"\ngit push\n\nSettings of Github Repo\nGo to the Github Repo > Settings > Pages\nGithub SettingsIn the webpage, choose _docs and you will see your website\nis published.\nchange settingsReference\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
-    "preview": "posts/2022-04-24-tutorial-of-creating-personal-blog-using-distill-package-and-github-pages/img/file_structure.png",
-    "last_modified": "2022-08-22T21:36:48-05:00",
-    "input_file": {},
-    "preview_width": 342,
-    "preview_height": 528
+    "contents": "\nWest Lawrence Greening\nProject\nWhat can be done on a vacant land? More development for vacant\napartment? Or let the land sit and absorb heat, or let soil to rot? Or,\na community garden for a livable and lively community?\nThis is a story map made through https://storymaps.arcgis.com/en/. The story map\ndemonstrates the lack of walkability and canopy in West Lawrence\nneighborhoods. More details can be found at https://www.arcgis.com/apps/Cascade/index.html?appid=21536c10fe15412aa449045c9c6b0444.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2022-08-22T23:02:23-05:00",
+    "input_file": {}
   },
   {
     "path": "posts/2017-12-01-binet/",
@@ -67,7 +48,7 @@
     "contents": "\nBinet’s Formula\nThe Binet’s formula is also known as the explicit expression of\nn-th term of the Fibbonacci Sequence.\nBrief Introduction\nCounting is a very basic skill. We have all been learning how to\ncount since we were very young. If we think back to our childhood, other\nthan simple vocabulary like “daddy” and “mommy”, the most common thing\nwas to count the numbers from one to ten. In this case, counting could\nbe the first exposure to mathematics for old math traditions. Now, we\nstill count in daily life, for instance, money exchange, time\nmanagement, fortune accumulation, etc. However, the beauty of counting\nis more than that. We can apply the concept of counting in various\nmathematical problems and proofs. Binet’s formula, in another name the\ngolden ratio, can be proved.\nTools\nI employed counting’s principle, DIE method by modern mathematician\nDoron Zeiberger. Principles in combinatorics are pioneered by modern\nmathematician Benjamin and Quinn. Without all knowledge above, there is\nno such proof can be exsited. Contact for more information.\nAnother version\nYou may find this formula and proof useful.\nA\nProof of Binet’s Formula\n\n\n\n",
     "preview": "posts/2017-12-01-binet/binet.png",
     "last_modified": "2022-08-22T22:38:28-05:00",
-    "input_file": "binet.knit.md",
+    "input_file": {},
     "preview_width": 995,
     "preview_height": 626
   }
