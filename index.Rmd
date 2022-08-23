@@ -19,9 +19,9 @@ knitr::opts_chunk$set(echo = FALSE)
 My name is Yiwen Wu, a doctoral student at the School of Public Affairs and Administration, University of Kansas. My very shallow knowledge in climate change science makes wonder what human beings can do to alleviate the suffering even with irreversible climate change effects. Combining my previous trained experience in math and urban planning, I build models to analyze the effectiveness of local planning policy in mitigating and adapting climate change. 
 
 ## Education:
-B.S. in Mathematics 
+B.S. in Mathematics, University of Wisconsin-Platteville
 
-M.U.P. in Urban Planning
+M.U.P. in Urban Planning, University of Kansas, Lawrence
 
 ## Language
 Chinese and English 

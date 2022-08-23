@@ -18,4 +18,6 @@ navbar:
       href: https://twitter.com/ywuKU
     - icon: fa fa-linkedin
       href: https://www.linkedin.com/in/yiwen-wu-1a2059161/
+    - icon: fa fa-github
+      href: https://github.com/yiwenzz
 output: distill::distill_article
