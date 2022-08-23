@@ -24,5 +24,14 @@
       <guid>http://www.pipinghotdata.com/posts/2022-08-22-buildingdistill</guid>
       <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
     </item>
+    <item>
+      <title>[Tutorial] Creating Academic Blog</title>
+      <dc:creator>Zhang Jihong</dc:creator>
+      <link>http://www.pipinghotdata.com/posts/2022-04-24-tutorial-of-creating-personal-blog-using-distill-package-and-github-pages</link>
+      <description>This post reviews the procedure of creating Github Pages Website  using distill package and Github Pages in a step-to-step way.</description>
+      <guid>http://www.pipinghotdata.com/posts/2022-04-24-tutorial-of-creating-personal-blog-using-distill-package-and-github-pages</guid>
+      <pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate>
+      <media:content url="http://www.pipinghotdata.com/posts/2022-04-24-tutorial-of-creating-personal-blog-using-distill-package-and-github-pages/img/file_structure.png" medium="image" type="image/png" width="342" height="528"/>
+    </item>
   </channel>
 </rss>
