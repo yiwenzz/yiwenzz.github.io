@@ -88,638 +88,39 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Yiwen Wu</title>
+  <title>Iowa Pop Characteristics</title>
 
-  <meta property="description" itemprop="description" content="Welcome to Yiwen&#39;s personal website, I post life, thougths, and academics."/>
+  <meta property="description" itemprop="description" content="A descriptive statistics for population in Iowa."/>
 
 
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2022-08-22"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-08-22"/>
+  <meta name="article:author" content="Yiwen Wu"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Yiwen Wu"/>
+  <meta property="og:title" content="Iowa Pop Characteristics"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Welcome to Yiwen&#39;s personal website, I post life, thougths, and academics."/>
+  <meta property="og:description" content="A descriptive statistics for population in Iowa."/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Yiwen Wu"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Yiwen Wu"/>
-  <meta property="twitter:description" content="Welcome to Yiwen&#39;s personal website, I post life, thougths, and academics."/>
+  <meta property="twitter:title" content="Iowa Pop Characteristics"/>
+  <meta property="twitter:description" content="A descriptive statistics for population in Iowa."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["Yiwen Wu"]},{"type":"character","attributes":{},"value":["Welcome to Yiwen's personal website, I post life, thougths, and academics. \n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Iowa Pop Characteristics"]},{"type":"character","attributes":{},"value":["A descriptive statistics for population in Iowa.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Yiwen Wu"]}]}]},{"type":"character","attributes":{},"value":["2022-08-22"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["2018-05-01-Iowa_files/anchor-4.2.2/anchor.min.js","2018-05-01-Iowa_files/bowser-1.9.3/bowser.min.js","2018-05-01-Iowa_files/distill-2.2.21/template.v2.js","2018-05-01-Iowa_files/figure-html5/unnamed-chunk-10-1.png","2018-05-01-Iowa_files/figure-html5/unnamed-chunk-11-1.png","2018-05-01-Iowa_files/figure-html5/unnamed-chunk-5-1.png","2018-05-01-Iowa_files/figure-html5/unnamed-chunk-6-1.png","2018-05-01-Iowa_files/figure-html5/unnamed-chunk-7-1.png","2018-05-01-Iowa_files/header-attrs-2.15/header-attrs.js","2018-05-01-Iowa_files/jquery-3.6.0/jquery-3.6.0.js","2018-05-01-Iowa_files/jquery-3.6.0/jquery-3.6.0.min.js","2018-05-01-Iowa_files/jquery-3.6.0/jquery-3.6.0.min.map","2018-05-01-Iowa_files/popper-2.6.0/popper.min.js","2018-05-01-Iowa_files/tippy-6.2.7/tippy-bundle.umd.min.js","2018-05-01-Iowa_files/tippy-6.2.7/tippy-light-border.css","2018-05-01-Iowa_files/tippy-6.2.7/tippy.css","2018-05-01-Iowa_files/tippy-6.2.7/tippy.umd.min.js","2018-05-01-Iowa_files/webcomponents-2.0.0/webcomponents.js","Iowa.csv"]}
+  </script>
   <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
-  </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  /* adjust viewport for navbar height */
-  /* helps vertically center bootstrap (non-distill) content */
-  .min-vh-100 {
-    min-height: calc(100vh - 100px) !important;
-  }
-
-  </style>
-
-  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-
-  <script type="application/javascript">
-
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-
-  function createFuseIndex() {
-
-    // create fuse index
-    var options = {
-      keys: [
-        { name: 'title', weight: 20 },
-        { name: 'categories', weight: 15 },
-        { name: 'description', weight: 10 },
-        { name: 'contents', weight: 5 },
-      ],
-      ignoreLocation: true,
-      threshold: 0
-    };
-    var fuse = new window.Fuse([], options);
-
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-
-    createFuseIndex()
-      .then(function(fuse) {
-
-        // make search box visible
-        searchEl.classList.remove('hidden');
-
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
-                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
-                : '';
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description || ''}
-                  </div>
-                  <div class="search-item-preview">
-                    ${img}
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-
-  });
-
-  </script>
-
-  <style type="text/css">
-
-  .nav-search {
-    font-size: x-small;
-  }
-
-  /* Algolioa Autocomplete */
-
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    font-size: 1rem;
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  </style>
-
-
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -2067,15 +1468,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
-  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
-  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="2018-05-01-Iowa_files/header-attrs-2.15/header-attrs.js"></script>
+  <script src="2018-05-01-Iowa_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="2018-05-01-Iowa_files/popper-2.6.0/popper.min.js"></script>
+  <link href="2018-05-01-Iowa_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="2018-05-01-Iowa_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="2018-05-01-Iowa_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="2018-05-01-Iowa_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="2018-05-01-Iowa_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="2018-05-01-Iowa_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="2018-05-01-Iowa_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
@@ -2087,63 +1489,233 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Yiwen Wu","description":"Welcome to Yiwen's personal website, I post life, thougths, and academics.","authors":[]}
+{"title":"Iowa Pop Characteristics","description":"A descriptive statistics for population in Iowa.","authors":[{"author":"Yiwen Wu","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2022-08-22T00:00:00.000-05:00","citationText":"Wu, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<a class="logo">
-<img src="ll.png" alt="Logo"/>
-</a>
-<a href="index.html" class="title">Yiwen Wu</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
-</div>
-<div class="nav-right">
-<a href="index.html">About</a>
-<a href="research.html">Research</a>
-<a href="blog.html">Blog</a>
-<a href="https://twitter.com/ywuKU">
-<i class="fa fa-twitter" aria-hidden="true"></i>
-</a>
-<a href="https://www.linkedin.com/in/yiwen-wu-1a2059161/">
-<i class="fa fa-linkedin" aria-hidden="true"></i>
-</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Yiwen Wu</h1>
+<h1>Iowa Pop Characteristics</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Welcome to Yiwen’s personal website, I post life, thougths, and
-academics.</p></p>
+<p><p>A descriptive statistics for population in Iowa.</p></p>
 </div>
 
+<div class="d-byline">
+  Yiwen Wu  
+  
+<br/>2022-08-22
+</div>
 
 <div class="d-article">
-<p><img src="jayhawk1912.png" style="width:30.0%" /></p>
-<h2 id="about-me">About me:</h2>
-<p>My name is Yiwen Wu, a doctoral student at the School of Public
-Affairs and Administration, University of Kansas. My very shallow
-knowledge in climate change science makes wonder what human beings can
-do to alleviate the suffering even with irreversible climate change
-effects. Combining my previous trained experience in math and urban
-planning, I build models to analyze the effectiveness of local planning
-policy in mitigating and adapting climate change.</p>
-<h2 id="education">Education:</h2>
-<p>B.S. in Mathematics</p>
-<p>M.U.P. in Urban Planning</p>
-<h2 id="language">Language</h2>
-<p>Chinese and English</p>
-<div class="sourceCode" id="cb1"><pre
+<p><img
+src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Blank_Iowa_county_map_with_county_names.svg" /></p>
+<h1 id="introduction">Introduction</h1>
+<p>The goal of this study is to look at:</p>
+<ul>
+<li>What is the relationships between the population and other
+variables, such as education attainment, poverty, the mean of income,
+and the median house value.</li>
+<li>Visually display the distribution of median house values across the
+state, and three frequency distributions based on the population of a
+county. All counties are evenly divided into three tiers:
+<ul>
+<li>Tier 1: population size from 3,000 to 11,000 (33 counties)</li>
+<li>Tier 2: population size form 11,000 to 20,000 (33 counties)</li>
+<li>Tier 3: population size form 20,000 to 48,200 (33 counties)</li>
+</ul></li>
+<li>Correlations between:
+<ul>
+<li>Number of bechelor received and number of poverty.</li>
+<li>Median house value and the mean of income.</li>
+<li>Number of employed and the mean of income.</li>
+<li>Number of employed and the number under poverty.</li>
+</ul></li>
+<li>T test.</li>
+</ul>
+<p>All data are collected through the U.S. Census at <a
+href="https://www.census.gov/"
+class="uri">https://www.census.gov/</a>.</p>
+<h1 id="methods">Methods</h1>
+<h2 id="load-packages">load Packages</h2>
+<p>In order to accomplish these following tasks:</p>
+<ul>
+<li>Data manipulation</li>
+<li>Correlation</li>
+<li>Histogram Visualization</li>
+<li>2-sample t test</li>
+</ul>
+I use the these following packages in R:
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h2 id="import-data">Import Data</h2>
+<p>I used a .csv file to store all collected data from the U.S. Census.
+My target are 99 counties of the state of Iowa.</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h2 id="check-variables">Check Variables</h2>
+<p>By using <code>head</code>, we are able to check all variables
+collected for future data analysis. From U.S. Census Data, I collected
+the following data as my variables: data2010 population, 2017
+population, number of bachelor obtained for over 25 year-old, population
+count that is below poverty, mean of income, and the median house
+value</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>              Id             Geography pop.2010 pop.2017 by.pop
+1 0500000US19003    Adams County, Iowa     4029     3686      1
+2 0500000US19159 Ringgold County, Iowa     5131     5034      1
+3 0500000US19009  Audubon County, Iowa     6119     5578      1
+4 0500000US19143  Osceola County, Iowa     6462     6045      1
+5 0500000US19173   Taylor County, Iowa     6317     6178      1
+6 0500000US19185    Wayne County, Iowa     6403     6476      1
+  Over25.Bach below.poverty median.house mean.income employed
+1         357           418        84900       76251     5935
+2         521           518        79600       77205     3116
+3         414           614        68800       79727    11189
+4         595           689        89500       73473    10108
+5         446           668        76100       74703     4783
+6         416          1001        74700       65938    20110</code></pre>
+</div>
+<h2 id="univariate-statistics">Univariate Statistics</h2>
+<p>By running <code>summary</code>, we are able to learn some basic
+statistics of our dataset. These statistics are range, mean and
+median.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>      Id             Geography            pop.2010     
+ Length:99          Length:99          Min.   :  4029  
+ Class :character   Class :character   1st Qu.: 10430  
+ Mode  :character   Mode  :character   Median : 15679  
+                                       Mean   : 30771  
+                                       3rd Qu.: 24631  
+                                       Max.   :430640  
+    pop.2017          by.pop   Over25.Bach      below.poverty  
+ Min.   :  3686   Min.   :1   Min.   :  357.0   Min.   :  418  
+ 1st Qu.:  9977   1st Qu.:1   1st Qu.:  944.5   1st Qu.: 1057  
+ Median : 15224   Median :2   Median : 1544.0   Median : 1570  
+ Mean   : 31775   Mean   :2   Mean   : 3908.7   Mean   : 3650  
+ 3rd Qu.: 25066   3rd Qu.:3   3rd Qu.: 2718.0   3rd Qu.: 2527  
+ Max.   :481830   Max.   :3   Max.   :75457.0   Max.   :53570  
+  median.house     mean.income        employed     
+ Min.   : 68800   Min.   : 60582   Min.   :  3116  
+ 1st Qu.: 91050   1st Qu.: 75504   1st Qu.:  8114  
+ Median :107700   Median : 79876   Median : 12194  
+ Mean   :113776   Mean   : 81653   Mean   : 24844  
+ 3rd Qu.:130600   3rd Qu.: 85658   3rd Qu.: 19728  
+ Max.   :218000   Max.   :129274   Max.   :354927  </code></pre>
+</div>
+<h3 id="histograms-and-densityfrequency-distributions">Histograms and
+Density/Frequency Distributions</h3>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="2018-05-01-Iowa_files/figure-html5/unnamed-chunk-5-1.png" width="624" /></p>
+</div>
+<p>Recall: based on the population size, we devide 99 counties into
+three tiers of counties. 1. Population between 3,000 and 11,000: 33
+counties - pop1 - Tier 1 2. Population between 11,000 and 20,000: 33
+counties - pop2 - Tier 2 3. Population between 20,000 and 482,000: 33
+counties - pop3 - Tier 3</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="2018-05-01-Iowa_files/figure-html5/unnamed-chunk-6-1.png" width="624" /></p>
+</div>
+<p>Based on the population size, I devide 99 counties into three tiers
+of counties.</p>
+<ol type="1">
+<li>Population between 3600 and 11000: 33 counties - pop1 - Tier 1</li>
+<li>Population between 11000 and 20000: 33 counties - pop2 - Tier 2</li>
+<li>Population between 20000 and 482000: 33 counties - pop3 - Tier
+3</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="2018-05-01-Iowa_files/figure-html5/unnamed-chunk-7-1.png" width="624" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>[1] 76251 77205 79727 73473 74703 65938</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>              Id             Geography pop.2010 pop.2017 by.pop
+1 0500000US19003    Adams County, Iowa     4029     3686      1
+2 0500000US19159 Ringgold County, Iowa     5131     5034      1
+3 0500000US19009  Audubon County, Iowa     6119     5578      1
+4 0500000US19143  Osceola County, Iowa     6462     6045      1
+5 0500000US19173   Taylor County, Iowa     6317     6178      1
+6 0500000US19185    Wayne County, Iowa     6403     6476      1
+  Over25.Bach below.poverty median.house mean.income employed
+1         357           418        84900       76251     5935
+2         521           518        79600       77205     3116
+3         414           614        68800       79727    11189
+4         595           689        89500       73473    10108
+5         446           668        76100       74703     4783
+6         416          1001        74700       65938    20110</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="2018-05-01-Iowa_files/figure-html5/unnamed-chunk-10-1.png" width="624" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="2018-05-01-Iowa_files/figure-html5/unnamed-chunk-11-1.png" width="624" /></p>
+</div>
+<h3 id="conlusion">Conlusion</h3>
+<p>Based on the frequency distribution, as the size of population of a
+county increaces, the average income tends to increase.</p>
+<h4
+id="correlation-between-number-of-bachelor-over-25-in-age-and-number-under-poverty">Correlation
+between number of bachelor over 25 in age and number under poverty</h4>
+<p>Normally, we would expact the correlation between number of bechalor
+degrees obtained and the number of people under poverty. However, the
+truth can be: the more bechalors a county has, the bigger population it
+may have. Therefore, it is more likely to have more people under
+poverty.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>[1] 0.9541034</code></pre>
+</div>
+<h4
+id="correlation-between-median-house-value-and-mean-of-income.">Correlation
+between median house value and mean of income.</h4>
+<p>There is a strong positive correlation between median house value and
+the average income.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>[1] 0.8414412</code></pre>
+</div>
+<h4
+id="correlation-between-number-of-employed-and-mean-of-income.">Correlation
+between number of employed and mean of income.</h4>
+<p>It is very likely that there is no correlation between number of
+employed and the mean of income.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>[1] 0.04853983</code></pre>
+</div>
+<h4
+id="correlation-between-number-of-employed-and-number-under-poverty.">Correlation
+between number of employed and number under poverty.</h4>
+It is very likely that there is no correlation between number of
+employed and the number under poverty
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>[1] -0.004254535</code></pre>
+</div>
+<h2 id="t--test">T- test</h2>
+<p>Null: the means of income are the same.<br />
+Alternative: they are not the same.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>
+    Two Sample t-test
+
+data:  my_data$pop.2017 and my_data$mean.income
+t = -8.3951, df = 196, p-value = 9.212e-15
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -61594.95 -38160.87
+sample estimates:
+mean of x mean of y 
+ 31774.86  81652.77 </code></pre>
+</div>
+<p>The p-value is smaller than 0.05. There is significant evidence to
+reject the null hypothesis. The means of income are not the same for
+counties with different population sizes.</p>
+<div class="sourceCode" id="cb10"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

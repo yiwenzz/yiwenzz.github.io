@@ -5,7 +5,7 @@
       "title": "Blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2022-08-22T23:15:44-05:00"
+      "last_modified": "2022-08-23T10:12:42-05:00"
     },
     {
       "path": "index.html",
@@ -13,8 +13,15 @@
       "description": "Welcome to Yiwen's personal website, I post life, thougths, and academics. \n",
       "author": [],
       "contents": "\n\nAbout me:\nMy name is Yiwen Wu, a doctoral student at the School of Public\nAffairs and Administration, University of Kansas. My very shallow\nknowledge in climate change science makes wonder what human beings can\ndo to alleviate the suffering even with irreversible climate change\neffects. Combining my previous trained experience in math and urban\nplanning, I build models to analyze the effectiveness of local planning\npolicy in mitigating and adapting climate change.\nEducation:\nB.S. in Mathematics\nM.U.P. in Urban Planning\nLanguage\nChinese and English\n\n\n\n",
-      "last_modified": "2022-08-22T23:15:45-05:00"
+      "last_modified": "2022-08-23T10:12:43-05:00"
+    },
+    {
+      "path": "research.html",
+      "title": "Research Projects",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2022-08-23T10:12:44-05:00"
     }
   ],
-  "collections": ["posts/posts.json"]
+  "collections": ["posts/posts.json", "r_posts/r_posts.json"]
 }

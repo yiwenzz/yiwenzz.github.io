@@ -118,7 +118,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["2018-05-01-Iowa_files/figure-html5/unnamed-chunk-10-1.png","2018-05-01-Iowa_files/figure-html5/unnamed-chunk-11-1.png","2018-05-01-Iowa_files/figure-html5/unnamed-chunk-5-1.png","2018-05-01-Iowa_files/figure-html5/unnamed-chunk-6-1.png","2018-05-01-Iowa_files/figure-html5/unnamed-chunk-7-1.png","Iowa.csv"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1468,16 +1468,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="buildingdistill_files/header-attrs-2.15/header-attrs.js"></script>
-  <script src="buildingdistill_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <script src="buildingdistill_files/popper-2.6.0/popper.min.js"></script>
-  <link href="buildingdistill_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
-  <link href="buildingdistill_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
-  <script src="buildingdistill_files/tippy-6.2.7/tippy.umd.min.js"></script>
-  <script src="buildingdistill_files/anchor-4.2.2/anchor.min.js"></script>
-  <script src="buildingdistill_files/bowser-1.9.3/bowser.min.js"></script>
-  <script src="buildingdistill_files/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="buildingdistill_files/distill-2.2.21/template.v2.js"></script>
+  <script src="2018-05-01-Iowa_files/header-attrs-2.15/header-attrs.js"></script>
+  <script src="2018-05-01-Iowa_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="2018-05-01-Iowa_files/popper-2.6.0/popper.min.js"></script>
+  <link href="2018-05-01-Iowa_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="2018-05-01-Iowa_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="2018-05-01-Iowa_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="2018-05-01-Iowa_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="2018-05-01-Iowa_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="2018-05-01-Iowa_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="2018-05-01-Iowa_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
@@ -1512,12 +1512,210 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
-<p>Distill is a publication format for scientific and technical writing,
-native to the web.</p>
-<p>Learn more about using Distill at <a
-href="https://rstudio.github.io/distill"
-class="uri">https://rstudio.github.io/distill</a>.</p>
-<div class="sourceCode" id="cb1"><pre
+<p><img
+src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Blank_Iowa_county_map_with_county_names.svg" /></p>
+<h1 id="introduction">Introduction</h1>
+<p>The goal of this study is to look at:</p>
+<ul>
+<li>What is the relationships between the population and other
+variables, such as education attainment, poverty, the mean of income,
+and the median house value.</li>
+<li>Visually display the distribution of median house values across the
+state, and three frequency distributions based on the population of a
+county. All counties are evenly divided into three tiers:
+<ul>
+<li>Tier 1: population size from 3,000 to 11,000 (33 counties)</li>
+<li>Tier 2: population size form 11,000 to 20,000 (33 counties)</li>
+<li>Tier 3: population size form 20,000 to 48,200 (33 counties)</li>
+</ul></li>
+<li>Correlations between:
+<ul>
+<li>Number of bechelor received and number of poverty.</li>
+<li>Median house value and the mean of income.</li>
+<li>Number of employed and the mean of income.</li>
+<li>Number of employed and the number under poverty.</li>
+</ul></li>
+<li>T test.</li>
+</ul>
+<p>All data are collected through the U.S. Census at <a
+href="https://www.census.gov/"
+class="uri">https://www.census.gov/</a>.</p>
+<h1 id="methods">Methods</h1>
+<h2 id="load-packages">load Packages</h2>
+<p>In order to accomplish these following tasks:</p>
+<ul>
+<li>Data manipulation</li>
+<li>Correlation</li>
+<li>Histogram Visualization</li>
+<li>2-sample t test</li>
+</ul>
+I use the these following packages in R:
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h2 id="import-data">Import Data</h2>
+<p>I used a .csv file to store all collected data from the U.S. Census.
+My target are 99 counties of the state of Iowa.</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h2 id="check-variables">Check Variables</h2>
+<p>By using <code>head</code>, we are able to check all variables
+collected for future data analysis. From U.S. Census Data, I collected
+the following data as my variables: data2010 population, 2017
+population, number of bachelor obtained for over 25 year-old, population
+count that is below poverty, mean of income, and the median house
+value</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>              Id             Geography pop.2010 pop.2017 by.pop
+1 0500000US19003    Adams County, Iowa     4029     3686      1
+2 0500000US19159 Ringgold County, Iowa     5131     5034      1
+3 0500000US19009  Audubon County, Iowa     6119     5578      1
+4 0500000US19143  Osceola County, Iowa     6462     6045      1
+5 0500000US19173   Taylor County, Iowa     6317     6178      1
+6 0500000US19185    Wayne County, Iowa     6403     6476      1
+  Over25.Bach below.poverty median.house mean.income employed
+1         357           418        84900       76251     5935
+2         521           518        79600       77205     3116
+3         414           614        68800       79727    11189
+4         595           689        89500       73473    10108
+5         446           668        76100       74703     4783
+6         416          1001        74700       65938    20110</code></pre>
+</div>
+<h2 id="univariate-statistics">Univariate Statistics</h2>
+<p>By running <code>summary</code>, we are able to learn some basic
+statistics of our dataset. These statistics are range, mean and
+median.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>      Id             Geography            pop.2010     
+ Length:99          Length:99          Min.   :  4029  
+ Class :character   Class :character   1st Qu.: 10430  
+ Mode  :character   Mode  :character   Median : 15679  
+                                       Mean   : 30771  
+                                       3rd Qu.: 24631  
+                                       Max.   :430640  
+    pop.2017          by.pop   Over25.Bach      below.poverty  
+ Min.   :  3686   Min.   :1   Min.   :  357.0   Min.   :  418  
+ 1st Qu.:  9977   1st Qu.:1   1st Qu.:  944.5   1st Qu.: 1057  
+ Median : 15224   Median :2   Median : 1544.0   Median : 1570  
+ Mean   : 31775   Mean   :2   Mean   : 3908.7   Mean   : 3650  
+ 3rd Qu.: 25066   3rd Qu.:3   3rd Qu.: 2718.0   3rd Qu.: 2527  
+ Max.   :481830   Max.   :3   Max.   :75457.0   Max.   :53570  
+  median.house     mean.income        employed     
+ Min.   : 68800   Min.   : 60582   Min.   :  3116  
+ 1st Qu.: 91050   1st Qu.: 75504   1st Qu.:  8114  
+ Median :107700   Median : 79876   Median : 12194  
+ Mean   :113776   Mean   : 81653   Mean   : 24844  
+ 3rd Qu.:130600   3rd Qu.: 85658   3rd Qu.: 19728  
+ Max.   :218000   Max.   :129274   Max.   :354927  </code></pre>
+</div>
+<h3 id="histograms-and-densityfrequency-distributions">Histograms and
+Density/Frequency Distributions</h3>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="2018-05-01-Iowa_files/figure-html5/unnamed-chunk-5-1.png" width="624" /></p>
+</div>
+<p>Recall: based on the population size, we devide 99 counties into
+three tiers of counties. 1. Population between 3,000 and 11,000: 33
+counties - pop1 - Tier 1 2. Population between 11,000 and 20,000: 33
+counties - pop2 - Tier 2 3. Population between 20,000 and 482,000: 33
+counties - pop3 - Tier 3</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="2018-05-01-Iowa_files/figure-html5/unnamed-chunk-6-1.png" width="624" /></p>
+</div>
+<p>Based on the population size, I devide 99 counties into three tiers
+of counties.</p>
+<ol type="1">
+<li>Population between 3600 and 11000: 33 counties - pop1 - Tier 1</li>
+<li>Population between 11000 and 20000: 33 counties - pop2 - Tier 2</li>
+<li>Population between 20000 and 482000: 33 counties - pop3 - Tier
+3</li>
+</ol>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="2018-05-01-Iowa_files/figure-html5/unnamed-chunk-7-1.png" width="624" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>[1] 76251 77205 79727 73473 74703 65938</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>              Id             Geography pop.2010 pop.2017 by.pop
+1 0500000US19003    Adams County, Iowa     4029     3686      1
+2 0500000US19159 Ringgold County, Iowa     5131     5034      1
+3 0500000US19009  Audubon County, Iowa     6119     5578      1
+4 0500000US19143  Osceola County, Iowa     6462     6045      1
+5 0500000US19173   Taylor County, Iowa     6317     6178      1
+6 0500000US19185    Wayne County, Iowa     6403     6476      1
+  Over25.Bach below.poverty median.house mean.income employed
+1         357           418        84900       76251     5935
+2         521           518        79600       77205     3116
+3         414           614        68800       79727    11189
+4         595           689        89500       73473    10108
+5         446           668        76100       74703     4783
+6         416          1001        74700       65938    20110</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="2018-05-01-Iowa_files/figure-html5/unnamed-chunk-10-1.png" width="624" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="2018-05-01-Iowa_files/figure-html5/unnamed-chunk-11-1.png" width="624" /></p>
+</div>
+<h3 id="conlusion">Conlusion</h3>
+<p>Based on the frequency distribution, as the size of population of a
+county increaces, the average income tends to increase.</p>
+<h4
+id="correlation-between-number-of-bachelor-over-25-in-age-and-number-under-poverty">Correlation
+between number of bachelor over 25 in age and number under poverty</h4>
+<p>Normally, we would expact the correlation between number of bechalor
+degrees obtained and the number of people under poverty. However, the
+truth can be: the more bechalors a county has, the bigger population it
+may have. Therefore, it is more likely to have more people under
+poverty.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>[1] 0.9541034</code></pre>
+</div>
+<h4
+id="correlation-between-median-house-value-and-mean-of-income.">Correlation
+between median house value and mean of income.</h4>
+<p>There is a strong positive correlation between median house value and
+the average income.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>[1] 0.8414412</code></pre>
+</div>
+<h4
+id="correlation-between-number-of-employed-and-mean-of-income.">Correlation
+between number of employed and mean of income.</h4>
+<p>It is very likely that there is no correlation between number of
+employed and the mean of income.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>[1] 0.04853983</code></pre>
+</div>
+<h4
+id="correlation-between-number-of-employed-and-number-under-poverty.">Correlation
+between number of employed and number under poverty.</h4>
+It is very likely that there is no correlation between number of
+employed and the number under poverty
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>[1] -0.004254535</code></pre>
+</div>
+<h2 id="t--test">T- test</h2>
+<p>Null: the means of income are the same.<br />
+Alternative: they are not the same.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>
+    Two Sample t-test
+
+data:  my_data$pop.2017 and my_data$mean.income
+t = -8.3951, df = 196, p-value = 9.212e-15
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -61594.95 -38160.87
+sample estimates:
+mean of x mean of y 
+ 31774.86  81652.77 </code></pre>
+</div>
+<p>The p-value is smaller than 0.05. There is significant evidence to
+reject the null hypothesis. The means of income are not the same for
+counties with different population sizes.</p>
+<div class="sourceCode" id="cb10"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
