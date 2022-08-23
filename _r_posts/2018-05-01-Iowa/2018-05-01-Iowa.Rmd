@@ -52,7 +52,8 @@ In order to accomplish these following tasks:
 * 2-sample t test
 
 I use the these following packages in R:
-```{r , results='hide', message=FALSE }
+
+```{r echo=TRUE, message=FALSE, , results='hide'}
 library(dplyr)
 library(magrittr)
 library(ggplot2)
@@ -88,7 +89,8 @@ summary(my_data)
 
 
 ### Histograms and Density/Frequency Distributions
-```{r}
+
+```{r echo=TRUE}
 y <- my_data$median.house
 hist(y,main = "Distribution of Median House Value", xlab = "Value Range", 
      xlim = c(0, 220000), col = "blue", border ="black", prob=TRUE)
@@ -101,7 +103,7 @@ Recall: based on the population size, we devide 99 counties into three tiers of 
 2. Population between 11,000 and 20,000: 33 counties - pop2 - Tier 2
 3. Population between 20,000 and 482,000: 33 counties - pop3 - Tier 3
 
-```{r}
+```{r echo=TRUE}
 x <- my_data$mean.income
 hist(x,main = "Distribution of Mean of Income", xlab = "Income Range", 
      col = "blue", border ="black", prob = T )
@@ -121,7 +123,7 @@ Based on the population size, I devide 99 counties into three tiers of counties.
 
 
 
-```{r}
+```{r echo=TRUE}
 pop1 <- filter(my_data, by.pop == 1)
 y1 <- pop1$mean.income
 hist(y1,main = "Income Distribution of Counties in the First Tier", xlab = "Income Range",
@@ -129,16 +131,18 @@ hist(y1,main = "Income Distribution of Counties in the First Tier", xlab = "Inco
 lines(density(y1, adjust = 2), col = "red")
 
 ```
+
 ```{r}
 head(y1)
 ```
+
 ```{r}
 head(pop1)
 ```
 
 
 
-```{r}
+```{r echo=TRUE}
 pop2 <- filter(my_data, by.pop == 2)
 y2 <- pop2$mean.income
 hist(y2,main = "Income Distribution of Counties in the Second Tier", xlab = "Income Range", 
@@ -148,26 +152,27 @@ lines(density(y2, adjust = 2), col = "red")
 ```
 
 
-```{r}
+```{r echo=TRUE}
 pop3 <- filter(my_data, by.pop == 3)
 y3 <- pop3$mean.income
 hist(y3,main = "Income Distribution of Counties in the Third Tier", xlab = "Income Range",
      xlim = c(60000, 150000), col = "blue", border ="black", prob=TRUE)
 lines(density(y3, adjust = 2), col = "red")
-
 ```
+
 ### Conlusion
 Based on the frequency distribution, as the size of population of a county increaces, the average income tends to increase.
 
 #### Correlation between number of bachelor over 25 in age and number under poverty
 Normally, we would expact the correlation between number of bechalor degrees obtained and the number of people under poverty. However, the truth can be: the more bechalors a county has, the bigger population it may have. Therefore, it is more likely to have more people under poverty.
 
-```{r}
+```{r echo=TRUE}
 correlation1 <- cor(my_data$Over25.Bach, my_data$below.poverty, 
                    method = c("pearson"))
 correlation1
 
 ```
+
 #### Correlation between median house value and mean of income.
 There is a strong positive correlation between median house value and the average income. 
 
@@ -190,7 +195,8 @@ correlation3
 
 #### Correlation between number of employed and number under poverty.
 It is very likely that there is no correlation between number of employed and the number under poverty
-```{r}
+
+```{r echo=TRUE}
 correlation4 <- cor(my_data$employed, my_data$below.poverty, 
                     method = c("pearson"))
 correlation4
@@ -206,8 +212,8 @@ Alternative: they are not the same.
 ```{r}
 res <- t.test(my_data$pop.2017, my_data$mean.income, data = my_data, var.equal = TRUE)
 res
-
 ```
+
 The p-value is smaller than 0.05. There is significant evidence to reject the null hypothesis. The means of income are not the same for counties with different population sizes. 
 
 
