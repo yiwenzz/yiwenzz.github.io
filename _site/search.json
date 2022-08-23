@@ -5,7 +5,7 @@
       "title": "Blog",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2022-08-22T18:00:28-05:00"
+      "last_modified": "2022-08-22T22:36:38-05:00"
     },
     {
       "path": "index.html",
@@ -13,7 +13,7 @@
       "description": "Welcome to Yiwen's website, I post my life, thougths, and academics. \n",
       "author": [],
       "contents": "\n\nAbout me:\nEducation:\nSkills\n\n\n\n",
-      "last_modified": "2022-08-22T18:00:29-05:00"
+      "last_modified": "2022-08-22T22:36:41-05:00"
     }
   ],
   "collections": ["posts/posts.json"]

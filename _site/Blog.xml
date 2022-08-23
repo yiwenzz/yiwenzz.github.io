@@ -33,5 +33,14 @@
       <pubDate>Sun, 24 Apr 2022 00:00:00 +0000</pubDate>
       <media:content url="http://www.pipinghotdata.com/posts/2022-04-24-tutorial-of-creating-personal-blog-using-distill-package-and-github-pages/img/file_structure.png" medium="image" type="image/png" width="342" height="528"/>
     </item>
+    <item>
+      <title>A Combinatorial Proof of Binet's Formula</title>
+      <dc:creator>Yiwen Wu</dc:creator>
+      <link>http://www.pipinghotdata.com/posts/2017-12-01-binet</link>
+      <description>Keywords: combinatorics, counting, Binet's Formula</description>
+      <guid>http://www.pipinghotdata.com/posts/2017-12-01-binet</guid>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      <media:content url="http://www.pipinghotdata.com/posts/2017-12-01-binet/binet.png" medium="image" type="image/png" width="995" height="626"/>
+    </item>
   </channel>
 </rss>

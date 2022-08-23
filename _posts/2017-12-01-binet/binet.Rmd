@@ -1,0 +1,36 @@
+---
+title: "A Combinatorial Proof of Binet's Formula"
+description: |
+  Keywords: combinatorics, counting, Binet's Formula
+author:
+  - name: Yiwen Wu
+date: 201712-01
+preview: binet.png
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Binet's Formula
+
+The Binet's formula is also known as the explicit expression of *n-th* term of the Fibbonacci Sequence. 
+
+
+### Brief Introduction 
+Counting is a very basic skill. We have all been learning how to count since we were very young. If we think back to our childhood, other than simple vocabulary like “daddy” and “mommy”, the most common thing was to count the numbers from one to ten. In this case, counting could be the first exposure to mathematics for old math traditions. Now, we still count in daily life, for instance, money exchange, time management, fortune accumulation, etc. However, the beauty of counting is more than that. We can apply the concept of counting in various mathematical problems and proofs. Binet's formula, in another name the golden ratio, can be proved. 
+
+### Tools
+
+I employed counting's principle, DIE method by modern mathematician Doron Zeiberger. Principles in combinatorics are pioneered by modern mathematician Benjamin and Quinn. Without all knowledge above, there is no such proof can be exsited. Contact for more information.
+
+## Another version
+
+You may find this formula and proof useful. 
+
+[A Proof of Binet's Formula](http://www.milefoot.com/math/discrete/sequences/binetformula.htm)
+
+
