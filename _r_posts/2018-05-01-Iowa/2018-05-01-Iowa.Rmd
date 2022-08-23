@@ -4,7 +4,7 @@ description: |
   A descriptive statistics for population in Iowa.
 author:
   - name: Yiwen Wu
-date: 2022-08-22
+date: 2018-05-01
 output:
   distill::distill_article:
     self_contained: false
