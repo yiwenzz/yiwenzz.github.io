@@ -6,6 +6,7 @@ author:
   - name: Yiwen Wu
 date: 2022-06-22
 preview: loop.jpeg
+citation: false
 output:
   distill::distill_article:
     self_contained: false

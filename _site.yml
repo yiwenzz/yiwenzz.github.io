@@ -2,7 +2,7 @@ name: "website"
 title: "Yiwen Wu"
 description: |
   Yiwen's blog posts
-base_url: http://www.pipinghotdata.com 
+base_url: http://www.yiwenwu.netlify.app
 output_dir: "_site"
 navbar:
   logo:

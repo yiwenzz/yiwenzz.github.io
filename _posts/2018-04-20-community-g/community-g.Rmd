@@ -5,6 +5,7 @@ description: |
 author:
   - name: Yiwen Wu
 date: 2018-04-20
+citation: false
 output:
   distill::distill_article:
     self_contained: false

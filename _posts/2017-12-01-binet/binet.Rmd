@@ -6,6 +6,7 @@ author:
   - name: Yiwen Wu
 date: 2017-12-01
 preview: binet.png
+citation: false
 output:
   distill::distill_article:
     self_contained: false

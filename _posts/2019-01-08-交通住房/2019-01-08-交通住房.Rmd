@@ -6,6 +6,7 @@ author:
   - name: Yiwen Wu
 date: 2019-01-08
 preview: city.png
+citation: false
 output:
   distill::distill_article:
     self_contained: false
