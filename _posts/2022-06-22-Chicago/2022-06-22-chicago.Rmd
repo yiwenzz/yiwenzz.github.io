@@ -1,0 +1,49 @@
+---
+title: "Coffee places in Chicago 2022"
+description: |
+   How can a good city not have welcoming coffees. 
+author:
+  - name: Yiwen Wu
+date: 2022-06-22
+preview: loop.jpeg
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Chicago has a good list of coffee shops, a set shopped, and more to discover. 
+
+The trip to Chicago is always fun. Take a peak on what attracts coffee lovers. This lists of coffee shops are have-to-go. I tried them, all are tasty.
+
+### Sawada in West Loop
+
+![](https://fastly.4sqi.net/img/general/600x600/82901909_u6r-shfe01Ny5AzAuLAin-bUuFHr5EXxcO5pGf66LyU.jpg){width=50% height=50%}
+
+### Goddess and the Baker
+
+![](https://fastly.4sqi.net/img/general/600x600/2273437_W8DWcF1YPb-07jo26fWSCY-xQYBPeLJXAUNXolw_dc8.jpg){width=50% height=50%}
+
+
+### Caffe Umbria
+
+![](https://images.squarespace-cdn.com/content/v1/5977c171893fc02caad61a66/1509068994880-KWKM198A1BQMIURKHZ6Y/cafeumbriaglass.jpg){width=50% height=50%}
+
+### Mojo
+![](https://www.cushingco.com/wp-content/uploads/2018/03/Menu-Boards-Full-View-at-Mojo-Coffee.jpg){width=50% height=50%}
+
+### Blue Bottle
+
+![](blue1.png){width=50% height=50%}
+
+### Startbucks Roastery 
+
+![](https://media-cdn.tripadvisor.com/media/photo-s/1d/9c/c3/26/inside-with-the-beans.jpg){width=50% height=50%}
+
+![](https://nypost.com/wp-content/uploads/sites/2/2022/04/starbucks-reserve-roastery-62.jpg?quality=75&strip=all&w=744){width=50% height=50%}
+
+
