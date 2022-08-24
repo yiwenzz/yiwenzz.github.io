@@ -7,7 +7,16 @@
     <description>Yiwen's blog posts
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 08 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Coffee places in Chicago 2022</title>
+      <dc:creator>Yiwen Wu</dc:creator>
+      <link>http://www.pipinghotdata.com/posts/2022-06-22-Chicago</link>
+      <description>How can a good city not have welcoming coffees.</description>
+      <guid>http://www.pipinghotdata.com/posts/2022-06-22-Chicago</guid>
+      <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
+      <media:content url="http://www.pipinghotdata.com/posts/2022-06-22-Chicago/loop.jpeg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>住房和交通</title>
       <dc:creator>Yiwen Wu</dc:creator>

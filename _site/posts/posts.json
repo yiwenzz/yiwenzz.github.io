@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2022-06-22-Chicago/",
+    "title": "Coffee places in Chicago 2022",
+    "description": "How can a good city not have welcoming coffees.",
+    "author": [
+      {
+        "name": "Yiwen Wu",
+        "url": {}
+      }
+    ],
+    "date": "2022-06-22",
+    "categories": [],
+    "contents": "\nChicago\nhas a good list of coffee shops, a set shopped, and more to\ndiscover.\nThe trip to Chicago is always fun. Take a peak on what attracts\ncoffee lovers. This lists of coffee shops are have-to-go. I tried them,\nall are tasty.\nSawada in West Loop\nSawada insideGoddess and the Baker\n\n\nCaffe Umbria\n\nMojo\n\nBlue Bottle\n\nStartbucks Roastery\n\n\n\n\n\n",
+    "preview": "posts/2022-06-22-Chicago/loop.jpeg",
+    "last_modified": "2022-08-23T20:29:13-05:00",
+    "input_file": "2022-06-22-chicago.knit.md"
+  },
+  {
     "path": "posts/2019-01-08-交通住房/",
     "title": "住房和交通",
     "description": "城市化带来的便利，你是受益者，还是受困者？",
