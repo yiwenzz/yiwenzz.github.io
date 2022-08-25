@@ -1,0 +1,314 @@
+---
+title: "A Bayes Application and made up examples"
+description: |
+  Keywords: Bayes Theorem, Bayesian application, Bayes interpretation.
+author:
+  - name: Yiwen Wu
+date: 2022-08-22
+citation: false
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+This post is my own practice and preparation of using/applying Bayesian regression. Material and example codes are from [John Myles White](http://www.johnmyleswhite.com/notebook/2010/08/20/using-jags-in-r-with-the-rjags-package/).
+
+The first step is to create a set of data that fulfills the following requirements: Gaussian distributed with equal variance and a meang which is a linear function of the predictors. 
+
+```{r}
+set.seed(42) # Set a random seed for reproducibility of the simulation
+
+samplesize <- 30 # Number of data points
+b_length <- sort(rnorm(samplesize)) # Body length (explanatory variable)
+
+int_true <- 30 # True intercept
+slope_true <- 10 # True slope
+mu <- int_true + slope_true * b_length # True means of normal distributions
+sigma <- 5 # True standard deviation of normal distributions
+
+b_mass <- rnorm(samplesize, mean = mu, sd = sigma) # Body mass (response variable)
+
+snakes1 <- data.frame(b_length = b_length, b_mass = b_mass)
+head(snakes1)
+```
+
+Now, before analyzing, convert to the list format. The list will have three elements, body mass, body length, and a number that indicates the sample size.
+
+```{r include=FALSE}
+library("R2jags")
+
+jagsdata_s1 <- with(snakes1, list(b_mass = b_mass, b_length = b_length, N = length(b_mass)))
+```
+
+Write JAGS model. Create the model with JAGS code, there are differences between R and JAGS code: JAGS use dnorm for distribution's precision (1/variance). Tilde (~) signifies that object on the left is random variable distributed according to the distribution on the right. Alpha and Beta are intercepts of linear relationships.
+
+```{r}
+lm1_jags <- function(){
+	# Likelihood:
+	for (i in 1:N){
+		b_mass[i] ~ dnorm(mu[i], tau) # tau is precision (1 / variance)
+		mu[i] <- alpha + beta * b_length[i]
+	}
+	# Priors:
+	alpha ~ dnorm(0, 0.01) # intercept
+	beta ~ dnorm(0, 0.01) # slope
+	sigma ~ dunif(0, 100) # standard deviation
+	tau <- 1 / (sigma * sigma) # sigma^2 doesn't work in JAGS
+}
+```
+
+
+The initial parameter values for the MCMC. The parameters are chosen whose posterior distributions will be reported and runs the model in JAGS.
+
+Three MCMC chanins with 12000 iterations each, and discards the first 2000 values, because these first 2000 values highly depend on initial values. 
+
+n.thin means only every 10th iteration is saved and the rest discarded. 
+
+```{r include=FALSE}
+init_values <- function(){
+	list(alpha = rnorm(1), beta = rnorm(1), sigma = runif(1))
+}
+
+params <- c("alpha", "beta", "sigma")
+
+fit_lm1 <- jags(data = jagsdata_s1, inits = init_values, parameters.to.save = params, model.file = lm1_jags,
+			   n.chains = 3, n.iter = 12000, n.burnin = 2000, n.thin = 10, DIC = F)
+
+```
+
+Model output. The 2.5% and 97.5% quantile range are the 95% credible interval for each parameter. For the 95% credible interval, there is a 95% probability that the true parameter lies within this range. 
+
+The last two columns are convergence diagnostics. n.eff is a number smaller than or equal to the number of samples saved from the chains (3*(12000-2000)/10). The higher autocorrelation in the saved samples indicate a smaller effective sample size. Rhat indicates how well the three Markov chains are mixed. Ideal Rhat is close to 1. Large Rhat values mean that chains are not mixed properly and posterior estimates cannot be trusted.
+
+```{r echo=TRUE}
+fit_lm1
+```
+
+The traceplot is used to visualize how well the chains have mixed. In this case, chains are nicely mixed
+
+```{r}
+traceplot(fit_lm1, mfrow = c(2, 2), ask = F)
+```
+
+Other ways to demonstrate posterior distributions of parameters graphically. 
+
+```{r}
+plot(fit_lm1)
+```
+
+Visualize in MCMC format
+
+```{r}
+lm1_mcmc <- as.mcmc(fit_lm1)
+plot(lm1_mcmc)
+```
+
+If we change parameters and plot the mcmc visuals, we want to see the differences when altering. 
+
+## Create a Catogorical variable (sex) and adding to the jags model
+
+```{r echo=FALSE}
+set.seed(42)
+
+samplesize <- 50 # Larger sample size because we're fitting a more complex model
+b_length <- sort(rnorm(samplesize)) # Body length
+sex <- sample(c(0, 1), size = samplesize, replace = T) # Sex (0: female, 1: male)
+
+int_true_f <- 30 # Intercept of females
+int_true_m_diff <- 5 # Difference between intercepts of males and females
+slope_true_f <- 10 # Slope of females
+slope_true_m_diff <- -3 # Difference between slopes of males and females
+
+mu <- int_true_f + sex * int_true_m_diff + 
+  (slope_true_f + sex * slope_true_m_diff) * b_length # True means
+sigma <- 5 # True standard deviation of normal distributions
+
+b_mass <- rnorm(samplesize, mean = mu, sd = sigma) # Body mass (response variable)
+
+# Combine into a data frame:
+snakes2 <- data.frame(b_length = b_length, b_mass = b_mass, sex = sex)
+
+jagsdata_s2 <- with(snakes2, list(b_mass = b_mass, 
+                                  b_length = b_length, sex = sex, 
+                                  N = length(b_mass)))
+jagsdata_s2
+```
+
+### Test of increasing the range of data (by increasing the standard deviation 10 times) 
+
+```{r echo=TRUE}
+lm2_jags <- function(){
+	# Likelihood:
+	for (i in 1:N){
+		b_mass[i] ~ dnorm(mu[i], tau) # tau is precision (1 / variance)
+		mu[i] <- alpha[1] + sex[i] * alpha[2] + 
+		  (beta[1] + beta[2] * sex[i]) * b_length[i]
+	}
+	# Priors:
+	for (i in 1:2){
+		alpha[i] ~ dnorm(0, 0.01) 
+		beta[i] ~ dnorm(0, 0.01)  
+	}
+	sigma ~ dunif(0, 1000) 
+	tau <- 1 / (sigma * sigma)
+}
+
+# ---------
+init_values <- function(){
+	list(alpha = rnorm(2), beta = rnorm(2), sigma = runif(1))
+}
+
+params <- c("alpha", "beta", "sigma")
+
+fit_lm2 <- jags(data = jagsdata_s2, 
+                inits = init_values, 
+                parameters.to.save = params, 
+                model.file = lm2_jags, n.chains = 3, 
+                n.iter = 12000, n.burnin = 2000, n.thin = 10, DIC = F)
+
+#--------
+lm2_mcmc <- as.mcmc(fit_lm2)
+plot(lm2_mcmc)
+
+```
+
+### Test of JAGS model with wrong mean but low variance.
+
+```{r echo=FALSE}
+set.seed(42)
+
+samplesize <- 50 # Larger sample size because we're fitting a more complex model
+b_length <- sort(rnorm(samplesize)) # Body length
+sex <- sample(c(0, 1), size = samplesize, replace = T) # Sex (0: female, 1: male)
+
+int_true_f <- 30 # Intercept of females
+int_true_m_diff <- 20 # Difference between intercepts of males and females
+slope_true_f <- 5 # Slope of females
+slope_true_m_diff <- -1 # Difference between slopes of males and females
+
+mu <- int_true_f + sex * int_true_m_diff + 
+  (slope_true_f + sex * slope_true_m_diff) * b_length # True means
+sigma <- 5 # True standard deviation of normal distributions
+
+b_mass <- rnorm(samplesize, mean = mu, sd = sigma) # Body mass (response variable)
+
+# Combine into a data frame:
+snakes3 <- data.frame(b_length = b_length, b_mass = b_mass, sex = sex)
+
+jagsdata_s3 <- with(snakes3, list(b_mass = b_mass, 
+                                  b_length = b_length, sex = sex, 
+                                  N = length(b_mass)))
+jagsdata_s3
+
+#-----------------
+
+
+lm3_jags <- function(){
+	# Likelihood:
+	for (i in 1:N){
+		b_mass[i] ~ dnorm(mu[i], tau) 
+		mu[i] <- alpha[1] + sex[i] * alpha[2] + 
+		  (beta[1] + beta[2] * sex[i]) * b_length[i]
+	}
+	# Priors:
+	for (i in 1:2){
+		alpha[i] ~ dnorm(0, 0.01) 
+		beta[i] ~ dnorm(0, 0.01)  
+	}
+	sigma ~ dunif(0, 10) 
+	tau <- 1 / (sigma * sigma)
+}
+
+# ---------
+init_values <- function(){
+	list(alpha = rnorm(2), beta = rnorm(2), sigma = runif(1))
+}
+
+params <- c("alpha", "beta", "sigma")
+
+fit_lm3 <- jags(data = jagsdata_s3, 
+                inits = init_values, 
+                parameters.to.save = params, 
+                model.file = lm3_jags, n.chains = 3, 
+                n.iter = 12000, n.burnin = 2000, n.thin = 10, DIC = F)
+
+#--------
+lm3_mcmc <- as.mcmc(fit_lm3)
+plot(lm3_mcmc)
+
+```
+
+### Test of JAGS model with wrong mean but large variance.
+
+The density of sigma shifted significanly. 
+
+```{r echo=FALSE}
+set.seed(42)
+
+samplesize <- 50 # Larger sample size because we're fitting a more complex model
+b_length <- sort(rnorm(samplesize)) # Body length
+sex <- sample(c(0, 1), size = samplesize, replace = T) # Sex (0: female, 1: male)
+
+int_true_f <- 30 # Intercept of females
+int_true_m_diff <- 20 # Difference between intercepts of males and females
+slope_true_f <- 5 # Slope of females
+slope_true_m_diff <- -1 # Difference between slopes of males and females
+
+mu <- int_true_f + sex * int_true_m_diff + 
+  (slope_true_f + sex * slope_true_m_diff) * b_length # True means
+sigma <- 25 # True standard deviation of normal distributions
+
+b_mass <- rnorm(samplesize, mean = mu, sd = sigma) # Body mass (response variable)
+
+# Combine into a data frame:
+snakes3 <- data.frame(b_length = b_length, b_mass = b_mass, sex = sex)
+
+jagsdata_s3 <- with(snakes3, list(b_mass = b_mass, 
+                                  b_length = b_length, sex = sex, 
+                                  N = length(b_mass)))
+jagsdata_s3
+
+#-----------------
+
+
+lm3_jags <- function(){
+	# Likelihood:
+	for (i in 1:N){
+		b_mass[i] ~ dnorm(mu[i], tau) 
+		mu[i] <- alpha[1] + sex[i] * alpha[2] + 
+		  (beta[1] + beta[2] * sex[i]) * b_length[i]
+	}
+	# Priors:
+	for (i in 1:2){
+		alpha[i] ~ dnorm(0, 0.01) 
+		beta[i] ~ dnorm(0, 0.01)  
+	}
+	sigma ~ dunif(0, 10) 
+	tau <- 1 / (sigma * sigma)
+}
+
+# ---------
+init_values <- function(){
+	list(alpha = rnorm(2), beta = rnorm(2), sigma = runif(1))
+}
+
+params <- c("alpha", "beta", "sigma")
+
+fit_lm3 <- jags(data = jagsdata_s3, 
+                inits = init_values, 
+                parameters.to.save = params, 
+                model.file = lm3_jags, n.chains = 3, 
+                n.iter = 12000, n.burnin = 2000, n.thin = 10, DIC = F)
+
+#--------
+lm3_mcmc <- as.mcmc(fit_lm3)
+plot(lm3_mcmc)
+
+```
+

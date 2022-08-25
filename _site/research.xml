@@ -7,7 +7,16 @@
     <description>Yiwen's blog posts
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 01 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>A Bayes Application and made up examples</title>
+      <dc:creator>Yiwen Wu</dc:creator>
+      <link>http://www.yiwenwu.netlify.app/r_posts/2022-08-22-Bayesian</link>
+      <description>Keywords: Bayes Theorem, Bayesian application, Bayes interpretation.</description>
+      <guid>http://www.yiwenwu.netlify.app/r_posts/2022-08-22-Bayesian</guid>
+      <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
+      <media:content url="http://www.yiwenwu.netlify.app/r_posts/2022-08-22-Bayesian/2022-08-22-Bayes_files/figure-html5/unnamed-chunk-6-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>Iowa Pop Characteristics</title>
       <dc:creator>Yiwen Wu</dc:creator>
