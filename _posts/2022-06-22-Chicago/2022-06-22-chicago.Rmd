@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Chicago has a good list of coffee shops, a set shopped, and more to discover. 
 
-The trip to Chicago is always fun. Take a peak on what attracts coffee lovers. This lists of coffee shops are have-to-go. I tried them, all are tasty.
+The trip to Chicago is always fun. Take a peak at following attractve coffee shops This list are have-to-go. I tried them, all tasty.
 
 ### Sawada in West Loop
 
@@ -39,7 +39,7 @@ The trip to Chicago is always fun. Take a peak on what attracts coffee lovers. T
 
 ### Blue Bottle
 
-![](blue1.png)
+![](https://fastly.4sqi.net/img/general/600x600/1380286358_LN97DDunzo3wYWuQ8kb4epxqju6TjDkFrTIVsPRUh9Y.jpg)
 
 ### Startbucks Roastery 
 
