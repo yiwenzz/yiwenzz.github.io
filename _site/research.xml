@@ -26,5 +26,13 @@
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       <media:content url="http://www.yiwenwu.netlify.app/r_posts/2018-05-01-Iowa/2018-05-01-Iowa_files/figure-html5/unnamed-chunk-5-1.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
+    <item>
+      <title>Time Series Analysis with Examples</title>
+      <dc:creator>Yiwen Wu</dc:creator>
+      <link>http://www.yiwenwu.netlify.app/r_posts/2016-04-20-time-series</link>
+      <description>This is a project from undergraduate studies, I post it for getting familiar with some basic concepts of time series analyses.</description>
+      <guid>http://www.yiwenwu.netlify.app/r_posts/2016-04-20-time-series</guid>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+    </item>
   </channel>
 </rss>
