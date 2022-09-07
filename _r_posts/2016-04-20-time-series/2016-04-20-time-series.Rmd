@@ -19,15 +19,15 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Motivation
 
-Movies have been a source of entertainment for people for many years. Summertme superhero blockbusters typically bring excitement and fun to an otherwise calm tme. Theaters can rake in huge sums of money on these types of movies. In partcularr the movie Iron Man 3r released on May 3r 2013r provides a great example of this phenomenon. The box ofce tcket sales of this movie have been analyzed to ft the best tme series plot possible to atempt to approximate future movie tcket sales for movies of this type.
+Movies have been a source of entertainment for people over years. Summertime superhero blockbusters typically bring excitement to an otherwise calm time. Theaters can rake in huge sums of money on these types of movies. In particular the movie Iron Man 3 released on May 3r 2013 provides a great example of this phenomenon. The box of ticket sales of this movie have been analyzed to ft the best time series plot possible to attempt to approximate future movie ticket sales for movies of this type.
 
 # Methodology
 
-To complete the analysisr data on tcket sales were gathered from <https://www.the-numbers.com/> for Iron Man 3. Daily and weekly per-ttheater tcket sales were collected and fted to several tme series models. The models included moving averager single exponental smoothingr oolt-t Wintersr simple linear regressionr and multple linear regression. Each model was judged based on three accuracy measures: MADr MAPEr and MSD. The best model for each type of data (daily and weekly) was selected and recommended to be used in the predicton of future movie releases.
+To complete the analysis data on ticket sales were gathered from <https://www.the-numbers.com/> for Iron Man 3. Daily and weekly per-theater ticket sales were collected and fitted to several time series models. The models included moving average single exponential  Holt-t Winters simple linear regression and multiple linear regression. Each model was judged based on three accuracy measures: MAD MAPE and MSD. The best model for each type of data (daily and weekly) was selected and recommended to be used in the prediction of future movie releases.
 
 # Results and Analysis
 
-For the Time Series Plot of Weekly Per Theater Ticket Sales (Figure 1)r there is a decreasing trend. The value of per-ttheater tcket sales decreases untl a certain point before leveling outr about 5 weeks afer release. There is no cyclical or seasonal efect that can be found from the tme series plotr and the plot looks fairly smooth. For the week 2013/5/24 and the week 2013/08/16r there were slight increasing in both weeksr the reason of increasing in May could be the end of semester and students throwing partes afer fnals. In Augustr good weather and nearing the end of summer breaks may play a factor.
+For the Time Series Plot of Weekly Per Theater Ticket Sales (Figure 1)r there is a decreasing trend. The value of per-theater ticket sales decreases until a certain point before leveling out about 5 weeks after release. There is no cyclical or seasonal effect that can be found from the time series plot and the plot looks fairly smooth. For the week 2013/5/24 and the week 2013/08/16r there were slight increasing in both weeks the reason of increasing in May could be the end of semester and students throwing parts after finals. In August good weather and nearing the end of summer breaks may play a factor.
 
 
 
