@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-![](jayhawk1912.png){width=30%}
+![](profile.png){width=30%}
 
 ## About me:
 My name is Yiwen Wu, a doctoral student at the School of Public Affairs and Administration, University of Kansas. My very shallow knowledge in climate change science makes wonder what human beings can do to alleviate the suffering even with irreversible climate change effects. Combining my previous trained experience in math and urban planning, I build models to analyze the effectiveness of local planning policy in mitigating and adapting climate change. 

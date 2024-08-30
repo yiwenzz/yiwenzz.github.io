@@ -11,29 +11,10 @@
     ],
     "date": "2022-06-22",
     "categories": [],
-    "contents": "\nChicago\nhas a good list of coffee shops, a set shopped, and more to\ndiscover.\nThe trip to Chicago is always fun. Take a peak at following attractve\ncoffee shops This list are have-to-go. I tried them, all tasty.\nSawada in West Loop\n\nGoddess and the Baker\n\nCaffe Umbria\n\nMojo\n\nBlue Bottle\n\nStartbucks Roastery\n\n\n\n\n\n",
+    "contents": "\r\nChicago\r\nhas a good list of coffee shops, a set shopped, and more to\r\ndiscover.\r\nThe trip to Chicago is always fun. Take a peak at following attractve\r\ncoffee shops This list are have-to-go. I tried them, all tasty.\r\nSawada in West Loop\r\n\r\nGoddess and the Baker\r\n\r\nCaffe Umbria\r\n\r\nMojo\r\n\r\nBlue Bottle\r\n\r\nStartbucks Roastery\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2022-06-22-Chicago/loop.jpeg",
-    "last_modified": "2022-08-27T16:42:13-05:00",
+    "last_modified": "2024-08-29T21:38:39-05:00",
     "input_file": {}
-  },
-  {
-    "path": "posts/2019-01-08-交通住房/",
-    "title": "住房和交通",
-    "description": "城市化带来的便利，你是受益者，还是受困者？",
-    "author": [
-      {
-        "name": "Yiwen Wu",
-        "url": {}
-      }
-    ],
-    "date": "2019-01-08",
-    "categories": [],
-    "contents": "\n交通和住房，你怎么选?\n虽然这个问题我肯定说不清楚，但还是想从浅薄认知里努力一下。\n很大程度上住房条件取决于阶层。例如，中产阶级，包括小商贩，手工业者，小企业家这种掌握一定生产资料和有一定资本基础的人，往往偏向更优的住房位置和条件。但是在世界不同地域，随着城市化进程的加快与放缓，中产阶级的定义并不是千篇一律。又例如，在发展中国家，中产可能是自由度较低的工业或者服务业从业者代表；在资本主义国家，中产阶级可能更多是服务行业从事人员。但是尽管地域不同，但在今后的城市化进程中，住房问题会持续挑战住房政策的制定和人民大众的选择，还有来自投机者的加压。\n劳工密集型城市更适宜走以城市交通为主的城市发展路线。在发展中国家，如果幸运，我们会经历改革开放带来的福利，由之而来的，大部分城市的崛起都受益于公共轨道交通、基建设施带动的周边房地产发展；或者由住房密集型社区（城中村）到现代化城市（以高层建筑为主的商业综合体）的转变。无一例外，城市交通和房屋住宅是互补并且互相依赖的关系。\n从另一个角度看，在北美洲的大部分城市，由于人口密度较低，城市无法负担高昂的公共交通设施，因而培养了世代的独立交通家庭。大部分北美公民受到了地域隔离而让独立的家庭意识得以传承。这也促成了美国青睐高度公路，南北交通，以及工业革命（每家必有小汽车）意识形态的根本原因；也是时代早就了Robert\nMoses\n这样的规划大师。至于今天，我们的喜好更多元化，盼望科技的进步，交通安全的提升，交通的高效性，住宿条件的优化。\n更重要的仍然是下一步，节能环保。\n从宏观来看，脱离了地域隔阂的城市交通才是优秀的交通。随着人口增长，住房是个显著的问题，地方zf应该致力于解决“负担得起的住房”，方便的住房，环保的住房…\n\n\n\n\n",
-    "preview": "posts/2019-01-08-交通住房/city.png",
-    "last_modified": "2022-08-23T22:43:03-05:00",
-    "input_file": {},
-    "preview_width": 550,
-    "preview_height": 317
   },
   {
     "path": "posts/2018-04-20-community-g/",
@@ -47,9 +28,9 @@
     ],
     "date": "2018-04-20",
     "categories": [],
-    "contents": "\nWest Lawrence Greening\nProject\nWhat can be done on a vacant land? More development for vacant\napartment? Or let the land sit and absorb heat, or let soil to rot? Or,\na community garden for a livable and lively community?\nThis is a story map made through https://storymaps.arcgis.com/en/. The story map\ndemonstrates the lack of walkability and canopy in West Lawrence\nneighborhoods. More details can be found at https://www.arcgis.com/apps/Cascade/index.html?appid=21536c10fe15412aa449045c9c6b0444.\n\n\n\n",
+    "contents": "\r\nWest Lawrence Greening\r\nProject\r\nWhat can be done on a vacant land? More development for vacant\r\napartment? Or let the land sit and absorb heat, or let soil to rot? Or,\r\na community garden for a livable and lively community?\r\nThis is a story map made through https://storymaps.arcgis.com/en/. The story map\r\ndemonstrates the lack of walkability and canopy in West Lawrence\r\nneighborhoods. More details can be found at https://www.arcgis.com/apps/Cascade/index.html?appid=21536c10fe15412aa449045c9c6b0444.\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2022-08-23T22:44:56-05:00",
+    "last_modified": "2024-08-29T21:38:39-05:00",
     "input_file": {}
   },
   {
@@ -64,9 +45,9 @@
     ],
     "date": "2017-12-01",
     "categories": [],
-    "contents": "\nBinet’s Formula\nThe Binet’s formula is also known as the explicit expression of\nn-th term of the Fibbonacci Sequence.\nBrief Introduction\nCounting is a very basic skill. We have all been learning how to\ncount since we were very young. If we think back to our childhood, other\nthan simple vocabulary like “daddy” and “mommy”, the most common thing\nwas to count the numbers from one to ten. In this case, counting could\nbe the first exposure to mathematics for old math traditions. Now, we\nstill count in daily life, for instance, money exchange, time\nmanagement, fortune accumulation, etc. However, the beauty of counting\nis more than that. We can apply the concept of counting in various\nmathematical problems and proofs. Binet’s formula, in another name the\ngolden ratio, can be proved.\nTools\nI employed counting’s principle, DIE method by modern mathematician\nDoron Zeiberger. Principles in combinatorics are pioneered by modern\nmathematician Benjamin and Quinn. Without all knowledge above, there is\nno such proof can be exsited. Contact for more information.\nAnother version\nYou may find this formula and proof useful.\nA\nProof of Binet’s Formula\n\n\n\n",
+    "contents": "\r\nBinet’s Formula\r\nThe Binet’s formula is also known as the explicit expression of\r\nn-th term of the Fibbonacci Sequence.\r\nBrief Introduction\r\nCounting is a very basic skill. We have all been learning how to\r\ncount since we were very young. If we think back to our childhood, other\r\nthan simple vocabulary like “daddy” and “mommy”, the most common thing\r\nwas to count the numbers from one to ten. In this case, counting could\r\nbe the first exposure to mathematics for old math traditions. Now, we\r\nstill count in daily life, for instance, money exchange, time\r\nmanagement, fortune accumulation, etc. However, the beauty of counting\r\nis more than that. We can apply the concept of counting in various\r\nmathematical problems and proofs. Binet’s formula, in another name the\r\ngolden ratio, can be proved.\r\nTools\r\nI employed counting’s principle, DIE method by modern mathematician\r\nDoron Zeiberger. Principles in combinatorics are pioneered by modern\r\nmathematician Benjamin and Quinn. Without all knowledge above, there is\r\nno such proof can be exsited. Contact for more information.\r\nAnother version\r\nYou may find this formula and proof useful.\r\nA\r\nProof of Binet’s Formula\r\n\r\n\r\n\r\n",
     "preview": "posts/2017-12-01-binet/binet.png",
-    "last_modified": "2022-08-23T22:42:38-05:00",
+    "last_modified": "2024-08-29T21:38:39-05:00",
     "input_file": {},
     "preview_width": 995,
     "preview_height": 626
