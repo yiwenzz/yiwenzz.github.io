@@ -1,7 +1,10 @@
 ---
 title: "Yiwen Wu"
-description: |
+description: null
 site: distill::distill_website
+output:
+  html_document:
+    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
@@ -14,15 +17,23 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![](file.png){width=30%}
 
-## About me:
-I am a PhD candidate at the School of Public Affairs and Administration, University of Kansas. I have a undergraduate background in mathematics and a master's degree in applied urban planning. I spent first h
-My very shallow knowledge in climate change science makes wonder what human beings can do to alleviate the suffering even with irreversible climate change effects. Combining my previous trained experience in math and urban planning, I build models to analyze the effectiveness of local planning policy in mitigating and adapting climate change. 
+## About Me
+I am a PhD candidate in the School of Public Affairs and Administration at the University of Kansas. I hold an undergraduate degree in pure mathematics and a master's degree in urban planning, where I focused on applied research methods. Over the past four years, my PhD studies in public administration have equipped me with robust theoretical frameworks. My passion for interdisciplinary research is evident in my diverse academic background, as I strongly believe that addressing complex social issues requires a multidimensional approach.
 
-## Education:
-B.S. in Mathematics, University of Wisconsin-Platteville
+The goals I set when I first applied for the doctoral program remain unchanged: identify issues, gather evidence, develop solutions, and inform practice. As my research has evolved, it has centered on urban planning, environmental justice, social equity, and hazard risk reduction. I am committed to advancing scholarship in these areas and championing efforts that will benefit future generations.
 
-M.U.P. in Urban Planning, University of Kansas, Lawrence
+## Contact Information
 
-## Language
-Chinese and English 
+[yiwen@ku.edu](mailto:yiwen@ku.edu)
 
+[<img src="in.png" alt="linkedin" width="50"/>](https://www.linkedin.com/in/yiwen-wu-1a2059161/)
+
+[<img src="twitter.png" alt="Twitter" width="50"/>](https://x.com/ywuKU)
+
+
+## Peer-reviewed Publications
+Wu, Yiwen, Ward Lyles, Kelly Overstreet, and Elaina Sutley. "Planning for Adaptation? Examining the Planning Integration for Hazard Risk Reduction." Sustainability 16, no. 10 (2024): 3999. [https://www.mdpi.com/2071-1050/16/10/3999](https://www.mdpi.com/2071-1050/16/10/3999)
+
+Lyles, Ward, Yiwen Wu, Kelly Overstreet, and Elaina Sutley. "Is Time on Our Side? A Longitudinal Analysis of the Quality of Mandated Plans." Journal of Planning Education and Research (2023): 0739456X231197182. [https://journals.sagepub.com/doi/10.1177/0739456X231197182?icid=int.sj-abstract.citing-articles.10](https://journals.sagepub.com/doi/10.1177/0739456X231197182?icid=int.sj-abstract.citing-articles.10)
+
+Lyles, Ward, Kelly Overstreet, Yiwen Wu, and Jasmin Moore. "Caring as Class: Resolving the Emotional Paradox of Climate Change Education.” Journal of Sustainability Education." Journal of sustainability education (2021). [https://www.susted.com/wordpress/content/caring-as-class-resolving-the-emotional-paradox-of-climate-change-education_2021_05/](https://www.susted.com/wordpress/content/caring-as-class-resolving-the-emotional-paradox-of-climate-change-education_2021_05/)

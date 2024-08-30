@@ -18,13 +18,13 @@
       <media:content url="http://www.yiwenwu.netlify.app/r_posts/2022-08-22-Bayesian/2022-08-22-Bayes_files/figure-html5/unnamed-chunk-6-1.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
-      <title>Iowa Pop Characteristics</title>
+      <title>network</title>
       <dc:creator>Yiwen Wu</dc:creator>
-      <link>http://www.yiwenwu.netlify.app/r_posts/2018-05-01-Iowa</link>
-      <description>A descriptive statistics for population in Iowa.</description>
-      <guid>http://www.yiwenwu.netlify.app/r_posts/2018-05-01-Iowa</guid>
-      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
-      <media:content url="http://www.yiwenwu.netlify.app/r_posts/2018-05-01-Iowa/2018-05-01-Iowa_files/figure-html5/unnamed-chunk-5-1.png" medium="image" type="image/png" width="1248" height="768"/>
+      <link>http://www.yiwenwu.netlify.app/r_posts/2024-08-13-network-analysis</link>
+      <description>Keywords: Bayes Theorem, Bayesian application, Bayes interpretation.</description>
+      <guid>http://www.yiwenwu.netlify.app/r_posts/2024-08-13-network-analysis</guid>
+      <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
+      <media:content url="http://www.yiwenwu.netlify.app/r_posts/2024-08-13-network-analysis/prac3_files/figure-html5/unnamed-chunk-10-1.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
       <title>Time Series Analysis with Examples</title>

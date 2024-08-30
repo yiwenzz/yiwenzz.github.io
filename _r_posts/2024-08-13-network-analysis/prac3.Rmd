@@ -1,0 +1,176 @@
+---
+title: "network"
+description: |
+  Keywords: Bayes Theorem, Bayesian application, Bayes interpretation.
+author:
+  - name: Yiwen Wu
+date: 2022-08-22
+citation: false
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+```
+
+
+```{r install, echo=TRUE, message=FALSE, warning=FALSE}
+#install.packages("igraph")
+#install.packages("igraphdata")
+library(igraph)
+#library(igraphdata)
+library(dplyr)
+library(tidyr)
+library(tidyverse)
+#install.packages(stringr)
+library(ITNr)
+library(igraphdata)
+library(RColorBrewer)
+```
+
+
+```{r}
+#dat3 <- read.csv("original_edgenode.csv", header=T, as.is=T) 
+
+```
+
+
+```{r}
+edges <- read.csv("link.csv")
+head(edges)
+```
+
+```{r}
+nodes <- read.csv("node.csv")
+head(nodes)
+
+```
+
+
+```{r}
+nrow(nodes); length(unique(nodes$id))
+```
+
+```{r}
+nrow(edges); nrow(unique(edges[,c("from", "to")]))
+```
+
+
+```{r}
+#We will collapse all links of the same type between the same two nodes by summing their weights, using aggregate() by “from”, “to”, & “type”
+links <- aggregate(edges[,3], edges[,-3], sum)
+links <- links[order(links$from, links$to),]
+colnames(links)[4] <- "weight"
+rownames(links) <- NULL
+links
+```
+
+```{r}
+net <- graph_from_data_frame(d=links, vertices=nodes, directed=F)
+net
+```
+
+```{r}
+#find any particular nodes and edges by attribute
+E(net)$type
+V(net)$agency #vertex attribute "agency name"
+
+#find specific nodes 
+V(net)[agency == "CoPlanning"]
+
+#specific planning type
+E(net)[type =="lup"]
+```
+
+```{r}
+# Get data frames to describe nodes and edges 
+#as_data_frame(net, what = "edges")
+```
+
+```{r}
+plot(net, edge.color="grey",
+vertex.color="orange", vertex.frame.color="#ffffff",  vertex.label.cex=.8,
+vertex.label=V(net)$agency, vertex.label.color="black")
+
+```
+
+```{r}
+# This plot is to visualize actors based on type (e.g., county, state, fed, private, nonprofit, private)
+# set attributes is to add them to the igraph object
+# Generate colors based on agency type:
+colrs <- c("antiquewhite2", "grey", "gold", "coral","aquamarine")
+
+V(net)$color <- colrs[V(net)$agency.type]
+E(net)$color <- as.factor(links$type)
+# Compute node degrees (#links) and use that to set node size:
+deg <- degree(net, mode="all")
+V(net)$size <- deg*3
+
+# use the influence weight for nodes:
+V(net)$size <- V(net)$influence*2.2
+
+# Setting them to NA will render no labels:
+V(net)$label <- NA
+
+# Set edge width based on weight:
+E(net)$width <- E(net)$weight
+#change arrow size and edge color:
+#E(net)$arrow.size <- .2
+E(net)$edge.color <- "azure4"
+E(net)$width <- 1+E(net)$weight*.8
+plot(net, vertex.frame.color="#ffffff",  vertex.label.cex=.6, 
+     vertex.label=V(net)$agency, vertex.label.color="black",
+     layout=layout.fruchterman.reingold)
+   #  layout=layout.fruchterman.reingold)
+
+legend("right", c("Local Agency","State Agency", "Federal Agency", "Private Sector", "Nonprofit"), pch=21,
+       col="#777777", pt.bg=colrs, pt.cex=2, cex=.8, bty="n", ncol=1)
+
+
+```
+
+```{r}
+deg_1 <- degree(net)
+deg_1
+clo_1 <- closeness(net, vids = V(net), normalized = F)
+clo_1
+
+bet_1 <- betweenness(net, normalized = F)
+bet_1
+```
+
+```{r}
+
+
+```
+
+
+```{r}
+
+```
+
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+```{r}
+
+```
+
