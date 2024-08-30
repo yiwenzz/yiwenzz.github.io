@@ -1,7 +1,6 @@
 ---
 title: "Yiwen Wu"
 description: |
-  Welcome to Yiwen's personal website, I post life, thougths, and academics. 
 site: distill::distill_website
 ---
 
@@ -13,10 +12,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-![](profile.png){width=30%}
+![](file.png){width=30%}
 
 ## About me:
-My name is Yiwen Wu, a doctoral student at the School of Public Affairs and Administration, University of Kansas. My very shallow knowledge in climate change science makes wonder what human beings can do to alleviate the suffering even with irreversible climate change effects. Combining my previous trained experience in math and urban planning, I build models to analyze the effectiveness of local planning policy in mitigating and adapting climate change. 
+I am a PhD candidate at the School of Public Affairs and Administration, University of Kansas. I have a undergraduate background in mathematics and a master's degree in applied urban planning. I spent first h
+My very shallow knowledge in climate change science makes wonder what human beings can do to alleviate the suffering even with irreversible climate change effects. Combining my previous trained experience in math and urban planning, I build models to analyze the effectiveness of local planning policy in mitigating and adapting climate change. 
 
 ## Education:
 B.S. in Mathematics, University of Wisconsin-Platteville
