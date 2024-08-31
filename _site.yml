@@ -5,6 +5,7 @@ description: |
 base_url: http://www.yiwenwu.netlify.app
 output_dir: "_site"
 navbar:
+  search: false
   logo:
     image: littlejay.png
   right:
@@ -18,4 +19,5 @@ navbar:
       href: blog.html
     - icon: fa fa-github
       href: https://github.com/yiwenzz
-output: distill::distill_article
+output: 
+  distill::distill_article:

@@ -7,7 +7,16 @@
     <description>Yiwen's blog posts
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Mon, 22 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>A Study of Social Network Analysis on Hazards Risk Reduction</title>
+      <dc:creator>Yiwen Wu</dc:creator>
+      <link>http://www.yiwenwu.netlify.app/r_posts/2024-08-13-network-analysis</link>
+      <description>Keywords: Network analysis, network application, visualization.</description>
+      <guid>http://www.yiwenwu.netlify.app/r_posts/2024-08-13-network-analysis</guid>
+      <pubDate>Thu, 22 Aug 2024 00:00:00 +0000</pubDate>
+      <media:content url="http://www.yiwenwu.netlify.app/r_posts/2024-08-13-network-analysis/prac3_files/figure-html5/unnamed-chunk-8-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>A Bayes Application and made up examples</title>
       <dc:creator>Yiwen Wu</dc:creator>
@@ -16,15 +25,6 @@
       <guid>http://www.yiwenwu.netlify.app/r_posts/2022-08-22-Bayesian</guid>
       <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
       <media:content url="http://www.yiwenwu.netlify.app/r_posts/2022-08-22-Bayesian/2022-08-22-Bayes_files/figure-html5/unnamed-chunk-6-1.png" medium="image" type="image/png" width="1248" height="768"/>
-    </item>
-    <item>
-      <title>network</title>
-      <dc:creator>Yiwen Wu</dc:creator>
-      <link>http://www.yiwenwu.netlify.app/r_posts/2024-08-13-network-analysis</link>
-      <description>Keywords: Bayes Theorem, Bayesian application, Bayes interpretation.</description>
-      <guid>http://www.yiwenwu.netlify.app/r_posts/2024-08-13-network-analysis</guid>
-      <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
-      <media:content url="http://www.yiwenwu.netlify.app/r_posts/2024-08-13-network-analysis/prac3_files/figure-html5/unnamed-chunk-10-1.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>
       <title>Time Series Analysis with Examples</title>
