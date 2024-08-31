@@ -13,7 +13,7 @@ navbar:
     - text: "Research"
       href: research.html
     - text: "CV"
-      href: [](https://raw.githubusercontent.com/yiwenzz/yiwenzz.github.io/blob/main/_site/YW_cv_2024June.pdf)
+      href: cv2024.html
     - text: "Blog"
       href: blog.html
     - icon: fa fa-github
