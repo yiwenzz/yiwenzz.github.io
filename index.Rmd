@@ -1,7 +1,9 @@
 ---
 title: "Yiwen Wu"
+image: littlejay.png
 description: null
 site: distill::distill_website
+base_url: http://www.yiwenwu.netlify.app
 output:
   html_document:
     df_print: paged
