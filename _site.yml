@@ -13,6 +13,8 @@ navbar:
       href: index.html
     - text: "Research"
       href: research.html
+    - text: "Teaching"
+      href: Teaching.html
     - text: "CV"
       href: cv2024.html
     - text: "Blog"

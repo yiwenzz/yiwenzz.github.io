@@ -1,0 +1,29 @@
+---
+title: "Teaching"
+image: teach_p.png
+base_url: http://www.yiwenwu.netlify.app
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+
+
+```
+
+![](teach_p.png){width=30%}
+
+## Pedagogy
+
+This page shows the courses taught as a Graduate Teaching Assistant and as an Instructor during my doctoral studies. 
+
+## Methods
+
+
+## Courses Taught
+
+
+
