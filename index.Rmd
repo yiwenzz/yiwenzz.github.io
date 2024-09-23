@@ -1,6 +1,8 @@
 ---
+name: "."
 title: "Yiwen Wu"
-image: littlejay.png
+image: _pics/littlejay.png
+theme: theme.css
 description: null
 site: distill::distill_website
 base_url: http://www.yiwenwu.netlify.app
