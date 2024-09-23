@@ -20,9 +20,11 @@ knitr::opts_chunk$set(echo = FALSE)
 ![](file.png){width=30%}
 
 ## About Me
-I am a PhD candidate in the School of Public Affairs and Administration at the University of Kansas. I hold an undergraduate degree in pure mathematics and a master's degree in urban planning, where I focused on applied research methods. Over the past four years, my PhD studies in public administration have equipped me with robust theoretical frameworks. My passion for interdisciplinary research is evident in my diverse academic background, as I strongly believe that addressing complex social issues requires a multidimensional approach.
+I am a PhD candidate in the School of Public Affairs and Administration at the University of Kansas. I hold an undergraduate degree in pure mathematics and a master's degree in urban planning. During my master's in planning, I gained extensive training in applied research methods. Over the past four years of doctoral studies in public administration and environmental planning, I've established well-grounded theoretical frameworks for my dissertation focusing on expanding government capacity for building resilient communities leveraging **Planning Consultants**. 
 
-The goals I set when I first applied for the doctoral program remain unchanged: identify issues, gather evidence, develop solutions, and inform practice. As my research has evolved, it has centered on urban planning, environmental justice, social equity, and hazard risk reduction. I am committed to advancing scholarship in these areas and championing efforts that will benefit future generations.
+My passion for interdisciplinary research is evident in my diverse academic training and my collaborative scholarly publications. I strongly believe that addressing complex issues like climate change and environmental planning requires integrated knowledge and collective efforts. My goal is to contribute meaningfully to the body of scholarly literature on climate resilience while fostering positive outcomes for local communities. 
+
+To achieve the objective of climate resilience, my research and teaching are anchored in themes such as environmental justice, social equity, and hazard risk reduction. I am dedicated to advancing scholarly discourse in these areas while actively promoting initiatives that will yield tangible benefits for both future generations and marginalized communities.
 
 ## Contact Information
 

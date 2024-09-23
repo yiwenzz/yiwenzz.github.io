@@ -1,7 +1,7 @@
 ---
-title: "Teaching"
+title: "Teaching Pedagogy"
 image: teach_p.png
-base_url: http://www.yiwenwu.netlify.app
+base_url: https://yiwenwu.netlify.app/teaching
 output:
   html_document:
     df_print: paged
@@ -10,20 +10,48 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 
-
-
 ```
 
-![](teach_p.png){width=30%}
+![](teach_p.png){width=50%}
 
-## Pedagogy
+## Student-Centered Learning
 
-This page shows the courses taught as a Graduate Teaching Assistant and as an Instructor during my doctoral studies. 
+Acknowledging that students come from diverse backgrounds and start at different levels is central to my teaching philosophy. A student-centered approach requires understanding and addressing their varied goals and needs. I set flexible learning objectives that provide both a low entry point and high expectations. The flexibility allows students to focus on core concepts while maintaining the space to pursue advanced topics with my full support.
 
-## Methods
+## Learning as An Opportunity for Personal Growth
 
+Teaching offers valuable opportunities for educators to grow and continuously refine their approach by understanding students' evolving needs. In courses on planning and public administration, teaching requires addressing both broad and specific challenges, as students often raise questions that challenge conventional practices. Rather than providing direct answers, it is important to encourage students to explore their curiosities and engage in self-directed research. This approach values critical inquiry and deep engagement over unreflective responses. Additionally, fostering a supportive academic community is essential. I have been deeply involved in promoting graduate student growth and resilience, co-directing initiatives like the Graduate Student Collective, which provided resources and opportunities for interdisciplinary collaboration, skill-building, and professional development. Through this, I aim to contribute to the personal and academic development of students, both inside and outside the classroom.
+
+## Adaptability in Learning
+
+To make learning more accessible, I offered various formats including synchronous and asynchronous options with recorded lectures, to accommodate diverse student needs, particularly those facing transportation or health issues like Covid.
 
 ## Courses Taught
+
+* PUAD 332 - Quantitative Method in Public Administration
+  * Designed and taught the course alone.
+  * <u>Course description:</u> this course focuses on building the quantitative analysis skills of students in public administration. Students learn basic and intermediate statistics, and methods of data analysis and interpretation. Students gain exposure to the uses of data in public organizational settings.
+
+* Urban Planning 200 - Sustainability
+  * Co-taught the course.
+  * <u>Course description:</u> this course introduces the concept of sustainability, examining its early iterations, recent applications, and possible future transformations. Critical analysis of sustainability as a concept and societal goal will be a course cornerstone. We examine two contemporary social issues that are relevant to students at the University of Kansas. Social science perspectives are emphasized, but, because sustainability necessitates an interdisciplinary perspective, the course  considers the contributions of a wide range of disciplines to these issues.
+  
+* Urban Planning 710 - Housing Policy and Planning
+  * Co-taught the course.
+  * <u>Course description:</u> this course explores contemporary U.S. housing issues and introduces the various methods used by the public sector as it intervenes in housing markets. Governments at all levels employ many different approaches to achieve housing goals. This course will examine many of these approaches to help students understand what these housing programs are supposed to accomplish and how well they work. In all cases, the objective of the course is to educate planners so that they have a firm understanding of housing programs that exist and a grasp of the methods used to select housing strategies for implementation by the public sector. 
+  
+* Public Administration 836 - Data Informed Decision-Making
+  * Served as Graduate Teaching Assistant.
+  * <u>Course description:</u> this course examines an array of data analysis tools that, when mastered, will increase students’ abilities to analyze, synthesize, think creatively, solve problems, and make decisions. It covers concepts of research design, probability, inferential statistics, and introduces quantitative approaches to examine public management and public policy decisions.
+  
+  
+  
+  
+
+
+
+
+
 
 
 
