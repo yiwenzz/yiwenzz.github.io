@@ -2,9 +2,6 @@
 title: "Teaching Pedagogy"
 image: teach_p.png
 base_url: https://yiwenwu.netlify.app/teaching
-output:
-  html_document:
-    df_print: paged
 ---
 
 ```{r setup, include=FALSE}
