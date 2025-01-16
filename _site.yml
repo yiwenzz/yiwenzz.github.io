@@ -17,8 +17,6 @@ navbar:
       href: Teaching.html
     - text: "CV"
       href: cv2024.html
-    - text: "Blog"
-      href: blog.html
     - icon: fa fa-github
       href: https://github.com/yiwenzz
 output: 
