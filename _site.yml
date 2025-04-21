@@ -1,3 +1,4 @@
+---
 name: "website"
 title: "Yiwen Wu"
 description: |
@@ -5,7 +6,7 @@ description: |
 base_url: http://www.yiwenwu.netlify.app
 output_dir: "_site"
 navbar:
-  search: false
+  search: true
   logo:
     image: littlejay.png
   right:
@@ -17,9 +18,8 @@ navbar:
       href: Teaching.html
     - text: "CV"
       href: cv2024.html
-    - text: "Blog"
-      href: blog.html
     - icon: fa fa-github
       href: https://github.com/yiwenzz
 output: 
   distill::distill_article:
+---
