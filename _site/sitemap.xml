@@ -2,42 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
     <loc>http://www.yiwenwu.netlify.app/</loc>
-    <lastmod>2025-01-15T22:24:19-06:00</lastmod>
+    <lastmod>2025-04-20T21:32:14-05:00</lastmod>
   </url>
   <url>
     <loc>http://www.yiwenwu.netlify.app/research.html</loc>
-    <lastmod>2025-01-15T22:23:42-06:00</lastmod>
+    <lastmod>2025-04-20T21:32:14-05:00</lastmod>
   </url>
   <url>
     <loc>http://www.yiwenwu.netlify.app/Teaching.html</loc>
-<<<<<<< HEAD
-    <lastmod>2025-04-20T21:30:30-05:00</lastmod>
-  </url>
-  <url>
-    <loc>http://www.yiwenwu.netlify.app/posts/2022-06-22-Chicago/</loc>
-    <lastmod>2024-08-29T22:28:49-05:00</lastmod>
-  </url>
-  <url>
-    <loc>http://www.yiwenwu.netlify.app/posts/2018-04-20-community-g/</loc>
-    <lastmod>2024-08-29T21:38:39-05:00</lastmod>
-  </url>
-  <url>
-    <loc>http://www.yiwenwu.netlify.app/posts/2017-12-01-binet/</loc>
-    <lastmod>2024-08-29T21:38:39-05:00</lastmod>
-=======
-    <lastmod>2025-01-15T22:22:58-06:00</lastmod>
->>>>>>> d3deca07e908a2e4a823a9a55b07e8019130fd76
+    <lastmod>2025-04-20T21:32:14-05:00</lastmod>
   </url>
   <url>
     <loc>http://www.yiwenwu.netlify.app/r_posts/2024-08-13-network-analysis/</loc>
-    <lastmod>2025-01-15T20:36:51-06:00</lastmod>
+    <lastmod>2024-08-31T11:51:28-05:00</lastmod>
   </url>
   <url>
     <loc>http://www.yiwenwu.netlify.app/r_posts/2022-08-22-Bayesian/</loc>
-    <lastmod>2025-01-15T20:36:51-06:00</lastmod>
+    <lastmod>2024-08-29T21:38:39-05:00</lastmod>
   </url>
   <url>
     <loc>http://www.yiwenwu.netlify.app/r_posts/2016-04-20-time-series/</loc>
-    <lastmod>2025-01-15T20:36:51-06:00</lastmod>
+    <lastmod>2024-08-29T21:38:39-05:00</lastmod>
   </url>
 </urlset>
