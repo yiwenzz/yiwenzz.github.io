@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - Urban Planning (UBPL 300) **Planning for Sustainable Cities**, GTA
 
-- Urban Planning (UBPL 735) **Site Planning and Design Design**, GTA
+- Urban Planning (UBPL 735) **Site Planning and Design**, GTA
 
 <u>2024 Fall</u>
 
